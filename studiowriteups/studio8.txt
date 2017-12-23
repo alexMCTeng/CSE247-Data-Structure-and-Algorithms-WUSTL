@@ -1,0 +1,106 @@
+Studio 8 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+What distribution do you see plotted (in the histogram or an XY Scatter plot) for Color hashcodes?
+
+
+
+If the distribution were not uniform, what would the plot look like?
+
+How many Color objects are added to the set?
+
+How many objects are contained in the set after all Color objects are added?
+
+Why are the above two numbers different?
+
+
+
+
+
+Are the Point objects' hash values distributed uniformly?
+
+
+How many Point objects are added to the set?
+
+
+How many Point objects are in the set after all Point objects are added?
+
+
+What is wrong with this result?
+
+Based on the code you see in Point, how is equality determined between two Point objects?
+
+
+Looking at the output in the console window, how does the implementation of hashCode() for Point explain the bad behavior in the set of Points?
+
+
+How well does your hash function fare in terms of uniformly distributed hash values for the random point objects?
+
+
+
+As a team, try out some ideas for Pancake's hashCode() implementation. Record your best idea in the studio8.txt file (here!):
+
+
+Based on the hashCode() implementation shown to you on the web page, answer the following questions:
+
+If two Pancake objects equal each other, will they get the same hashCode() results?
+
+How good of a job does the implementation do of obtaining uniform distributions of hashCode() values for two Pancake objects that do not equal each other?
+
+
+
+Just by inspection of the hashCode() method on the web page, state two Pancakes that are different yet have the same hashCode() value.
+
+
+Your best hashCode() for Pancake (paste the method here please):
+
+
+
+
+
+Do your hashCode() values for Pancake appear to be uniformly distributed?
+
+
+
+
+Your implementation of Syrup's hashCode() -- paste here:
+
+
+
+
+
+
+
+How uniformly distributed are your Syrup hashCode() values?
+
+
+
+How uniformly distributed are your PancakeAndSyrup hashCode() values?
+
+
+
+
+
+
+
+
+
+
+
+
+

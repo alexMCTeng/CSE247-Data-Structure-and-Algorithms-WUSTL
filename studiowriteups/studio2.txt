@@ -1,0 +1,41 @@
+Studio 2 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Part A
+
+What do you see in the plots for ticks and time?
+
+How would you characterize those curves?
+
+Based on the current code for addLast, why do you see this behavior?
+
+Part B
+
+What behavior do you see now for appending n items to a list if you use a tail reference?
+
+While we have reasoned so far only about time, if we are adding n elements to the end of a list, what is the asymptotic complexity of the additional space required when using the tail reference?
+
+Under what conditions would you recommend using a linked list with a tail reference vs. a linked list without at tail reference?
+
+Part C
+
+Why does getSize() take the time it does?
+
+How did you achieve Θ(1) performance for getSize()?
+

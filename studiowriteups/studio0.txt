@@ -1,0 +1,85 @@
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1: 
+	What do you see in both plots? 
+	Are there any differences between the two?
+	What could account for those differences?
+	
+Discuss this (and all your responses for this assignment) with your TA as you go.
+
+Question A2:
+	Why do the times provided for Quadratic produce such a nice plot, while the original values of Linear did not?
+	
+Question A3: 
+	From the runs you have tried so far, how does the placement of ticker.tick() calls affect the plots you see? 
+	In particular, do the changes affect the shapes of the curves, the values plotted, or both
+	
+Question A4: 
+	In terms of n, how would you characterize, in the most simple terms, 
+	the time and ticks curves that have been generated so far?
+		
+Question A5: 
+	What would happen if you deleted all ticker.tick() calls in the innermost loop,
+	while leaving other calls to ticker.tick() that you just placed in run()?
+	
+Question B1:
+	What do you see? How do the curves reflect the code inside AddsTwoNumbers?
+	Do you think the value of n matters here in terms of the time it takes to perform the operation?
+	Why or why not?
+	
+Question B2:
+	What do the data and plot tell you about the time it takes to allocate an array of n integers?
+	Is it reasonable to say that the line of code
+
+ 		this.array = new int[this.n]
+ 		
+	takes a constant amount of time, independent of the value of this.n?
+	
+Question B3:
+	Do the ticks agree in shape with the time we measured in running the Allocates code?
+	
+Question B4:
+	Are the plots more similar to each other than before?
+	What does this tell you about how much time it takes to allocate an array of n integers?
+	
+Question B5:
+	Which group do you expect to finish first?
+	Can you formalize, in terms of n the amount of work (ticks)
+	that each group must do to write n in the form required for that group?
+
+	Both groups achieve the same result, namely the recording of an integer n.
+
+		Under what circumstances is the decimal notation more efficient than tally marks?
+		Under what circumstances is the tally mark notation more efficient than decimal notation?
+		
+	If you are not sure, take a look the link from the assignment web page.
+	
+Question D1:
+	How would you describe the curve you see?
+	As a team, think about possible polynomial functions that could generate such a curve.
+	Write your answer here:
+	
+Question E1:
+	What is the closed form solution for T(n)?
+	
+Question E2:
+	What is the closed form solution for T(n)?
+	Can you express this result in terms of n, as well as k?
+	Write your answer here:
+	
+	

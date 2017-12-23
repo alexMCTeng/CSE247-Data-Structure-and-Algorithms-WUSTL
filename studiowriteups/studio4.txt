@@ -1,0 +1,39 @@
+Studio 4 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Substitution
+
+
+Using substitution, prove that the solution to T(n)=T(n-1)+10 is T(n)=10n
+
+
+
+Using substitution, show that T(n)=T(n-1)+10 is O(n-squared)
+
+
+Recursion Tree Solutions
+
+1.
+
+
+2.
+
+
+3.
+
+
+4.

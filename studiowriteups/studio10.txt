@@ -1,0 +1,74 @@
+Studio 10 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+
+Part A
+
+A1. Why do sad and happy appear as they do? Why is happy indented? What are the parent, left-child, and right-child relationships between happy and sad?
+
+Modify the code in the main method so that some string appears above sad, indented as much as happy.
+
+A2. What string did you use?
+
+In the numbers that follow, find the first and last entries in the tree that is shown (on its side, as discussed in lecture).
+
+A3. Is the first number always the first line to be shown in such a display?
+
+A4. Is the last number always the last line to be shown?
+
+A5. Why do we need addHelper?
+
+A6. Why is it private instead of public?
+
+A7. Does the code actually remove the node containing the value to be removed? If not, what is actually happening?
+
+A8. Why does the code fail to execute properly?
+
+A9. Why does eclipse not report a problem when you try to create a BST of type Color?
+
+
+Part B
+
+
+SortedSetUsingBST (random input)
+
+B1. What behavior do you see in the output? You will likely have to rely on ticks rather than time, because the times are so fast.
+
+B2. What behavior did you expect to see, and why?
+
+
+SortedSetUsingBST (sorted input)
+
+B3. What behavior do you see in the output given the sorted input?
+
+B4. What behavior did you expect to see, and why?
+
+SortedSetUsingUnorderedList
+
+B5. What behavior do you see in the output when a sorted set is implemented by an unordered list? Adding to the list should be quick, so why are we seeing these times?
+
+B6. What behavior did you expect to see, and why?
+
+
+
+
+
+
+
+
+
