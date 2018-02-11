@@ -1,0 +1,83 @@
+Studio 5 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Master Method: For each problem:
+
+If the Master Theorem applies, state which case applies and the solution to the recurrence according to the theorem.
+If the Master Theorem does not apply, state why.
+
+1.
+
+
+2.
+
+
+3.
+
+
+4.
+
+
+5. 
+
+
+6.
+
+
+7.
+
+
+8.
+
+
+9. 
+
+
+10. 
+
+
+11.
+
+
+12.
+
+
+13.
+
+
+14.
+
+
+15. 
+
+
+16.
+
+
+17.
+
+
+18.
+
+
+19.
+
+
+20.
+
+
+21.
