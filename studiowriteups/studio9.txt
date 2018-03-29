@@ -1,0 +1,41 @@
+Studio 9 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Review from Studio 8 
+
+Based on your knowledge of hash tables now, what do you expect to happen when you run PointSet.java? Why? 
+
+Division Method 
+
+Try running the DivisionHash.java file several times, varying the number of buckets used by changing the argument to the DivisionHash constructor in the main method. Try at least one even number, odd number, and prime number less than 20, then try at least one even, odd, and prime near 100. What behavior do you observe? What explains this behavior?
+Based on your observations, what types of values are good for the number of buckets?
+
+
+
+
+Identify what this statement is doing and confirm your answer with your group. Then, modify this statement so that it generates a different set of numbers. What do you observe now when you run the code? Repeat this experiment with different values added to the hash set and different numbers of buckets in the set.
+
+
+
+
+Multiplication Method 
+
+Modify this loop so that it generates different sets of values, and run the code with each set (including the original). What do you observe? What does this tell you about the multiplication method?
+
+
+
+Use the multiplication method to figure out which bucket each object gets placed in, assuming the hash set has 10 buckets. A calculator will be helpful for this section.

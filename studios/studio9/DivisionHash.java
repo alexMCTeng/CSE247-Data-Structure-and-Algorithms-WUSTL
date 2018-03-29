@@ -30,7 +30,7 @@ public class DivisionHash<T> extends MyHashSet<T> {
 //		System.out.println("abc".hashCode());
 //		System.out.println("cba".hashCode());
 		Random r = new Random();
-		DivisionHash<Object> h = new DivisionHash<Object>(8);
+		DivisionHash<Object> h = new DivisionHash<Object>(25);
 		for (int i=0; i < 1000; i = i + 16) {
 			h.add(new MyInteger(i));
 		}
