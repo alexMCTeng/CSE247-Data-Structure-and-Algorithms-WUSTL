@@ -21,10 +21,16 @@ public class BSTValidator<T extends Comparable<T>> {
      * and the after tree.  This should provide enough information to
      * diagnose your problems with your binary heap implementation.
      */
+    private int sizeVerify;
     public void check() {
         try {
             TreeNode<T> root = tree.Root();
+            sizeVerify = 0;
             CheckTree(root, null);
+            if (sizeVerify!=tree.size()){
+                throw new BSTValidationError(String.format("The tree does not contain all the elements. it should contain %s, but instead contains %s",
+                        tree.size(), sizeVerify));
+            }
             before = TreeToStrings.toTree(tree);
         } catch (Throwable t) {
             String oops = "\nTree before the problem occurred:\n";
@@ -55,9 +61,11 @@ public class BSTValidator<T extends Comparable<T>> {
         if (child == null) {
             return;
         } else if (parent == null) {
+            sizeVerify++;
             CheckTree(child.Left(), child);
             CheckTree(child.Right(), child);
         } else {
+            sizeVerify++;
             if (child == parent.Left() && child.getValue().compareTo(parent.getValue()) > 0) {
                 throw new BSTValidationError(String.format("The left child {%s} is larger than its parent {%s} ", child.getValue(), parent.getValue()));
             }

@@ -1,0 +1,43 @@
+Studio 11 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+Perform a depth-first search (DFS) on the graph starting at node E and give the depth-first numbering of each node. 
+Mark the nodes with their discover time and finish time. 
+Explore neighbors alphabetically when given a choice. Refer to the Lecture 11 slides if you need to see what a DFS numbering looks like.
+
+	Discovered		Finished 
+A
+B
+C
+D
+E
+F
+G
+
+Based on your numbering, generate a valid topological order for the nodes in the graph.
+
+Perform a breadth-first search (BFS) on the same graph, starting at node E, and give the breadth-first numbering of each node. 
+Explore neighbors alphabetically when given a choice.
+
+List the preorder traversal of the nodes in the tree.
+
+List the postorder traversal of the nodes in the tree.
+
+List the inorder traversal of the nodes in the tree.
+
+Prove that the reverse of a postorder listing of a tree is the same as the right-to-left preorder listing of a tree.
