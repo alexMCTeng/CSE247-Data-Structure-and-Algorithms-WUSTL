@@ -1,0 +1,66 @@
+Studio 11 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+Part 1. Introduction
+
+
+1. Give your own definition for what a crypographic key is 
+
+2. Explain the differences between public, private, and shared keys 
+
+3. Is Diffie-Hellmann an encryption algorithm? **
+
+4. Encryption is often confused with hashing, can you think of a reason why? what is the main difference? 
+
+5. bonus: should passwords be hashed or encrypted before they are stored in a database? why? 
+
+
+Part 2. Caesar Ciphers
+
+
+For the following messages and keys, give the output of the caesar encryption:
+
+1.
+
+2. 
+
+3. 
+
+for the following message/encrypted message pairs, give the key
+
+1. 
+
+2. 
+
+3.
+
+
+Part 3. Diffie-Hellmann Key Exchanges
+
+
+before starting make sure you are able to answer the following questions:
+
+1. what values must be agreed upon by both parties beforehand? 
+
+2. how many private keys are used? 
+
+3. what is the equation to calculate the public keys?
+
+4. what the equation to produce the final shared keys? 
+
+5. how many of the secret numbers need to be known in order to crack the algorithm? 
