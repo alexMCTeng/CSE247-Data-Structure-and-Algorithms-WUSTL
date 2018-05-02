@@ -142,4 +142,23 @@ public class TestUnbalancedTree {
 		Arrays.sort(copy);
 
 	}
+	@Test
+	public void testInsertWithoutRebalance() { //this test inserts the elements in an order that does not require rebalancing to take place
+		BSTValidator<Integer> bstv = genTree();
+		BST<Integer> tree = bstv.tree;
+		int num = 15;
+		TreeNode<Integer> check;
+		int[] elements = {100,50,150,25,75,125,175,10,30,60,90,110,130,160,190,0,11,29,31,59,61,89,91,109,111,129,131,159,161,189,191};
+		for (int i=0; i < num; ++i) {
+			verifySize("before Insert", tree, i);
+			bstv.check();
+			check = tree.Insert(elements[i]);
+			assertEquals("Could not find element that was just inserted, check your insert and find method:", check,tree.Find(elements[i]));
+			bstv.check();
+			verifySize("after Insert", tree, i+1);
+			assertTrue("Heap should not be empty now: check your isEmpty() method", !tree.isEmpty());
+		}
+		System.out.println("Final Tree:");
+		System.out.println(TreeToStrings.toTree(tree));
+	}
 }
