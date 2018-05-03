@@ -41,24 +41,24 @@ public class TestBalancedTree {
 		assertTrue("The heap after creation should be empty, but your isEmpty() did not agree.", bst.isEmpty());
 	}
 
-	@Test
-	public void testInsertRoot() {
-		BSTValidator<Integer> bstv = genTree();
-		BST<Integer> tree = bstv.tree;
-		int num = (int) (100*Math.random());
-		TreeNode<Integer> check;
-		{
-			verifySize("before Insert", tree, 0);
-			bstv.check();
-			check = tree.Insert(num);
-			bstv.check();
-			assertEquals("Element was not inserted as the root", check,tree.Root());
-			assertEquals("Find did not return the root element.", check,tree.Find(num));
-			verifySize("after Insert", tree, 1);
-			assertTrue("Heap should not be empty now: check your isEmpty() method", !tree.isEmpty());
-		}
-		System.out.println(TreeToStrings.toTree(tree));
-	}
+//	@Test
+//	public void testInsertRoot() {
+//		BSTValidator<Integer> bstv = genTree();
+//		BST<Integer> tree = bstv.tree;
+//		int num = (int) (100*Math.random());
+//		TreeNode<Integer> check;
+//		{
+//			verifySize("before Insert", tree, 0);
+//			bstv.check();
+//			check = tree.Insert(num);
+//			bstv.check();
+//			assertEquals("Element was not inserted as the root", check,tree.Root());
+//			assertEquals("Find did not return the root element.", check,tree.Find(num));
+//			verifySize("after Insert", tree, 1);
+//			assertTrue("Heap should not be empty now: check your isEmpty() method", !tree.isEmpty());
+//		}
+//		System.out.println(TreeToStrings.toTree(tree));
+//	}
 
 	@Test
 	public void testInsertWithoutRebalance() { //this test inserts the elements in an order that does not require rebalancing to take place
