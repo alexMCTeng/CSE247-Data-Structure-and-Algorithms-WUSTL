@@ -5,6 +5,8 @@ import timing.Ticker;
 
 import java.util.LinkedList;
 
+//Note:  this lab implements a generic AVL tree, not just one
+//used to implement a Set, so duplicates are allowed
 public class AVLTree<T extends Comparable<T>> extends BST<T> {
 	private AVLTreeNode<T> root;
 	public Ticker ticker;
