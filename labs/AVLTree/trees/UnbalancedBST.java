@@ -39,7 +39,7 @@ public class UnbalancedBST<T extends Comparable<T>> extends BST<T> {
         if (curr == null) {
             return null;
         }
-        int comparison = curr.getValue().compareTo(value);
+        int comparison = value.compareTo(curr.getValue());
         if (comparison == 0) {
             return curr;
         } else if (comparison < 0) {
