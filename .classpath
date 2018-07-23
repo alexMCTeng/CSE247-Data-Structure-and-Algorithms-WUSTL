@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="lecture"/>
-	<classpathentry kind="src" path="exercises"/>
 	<classpathentry kind="src" path="labs"/>
 	<classpathentry kind="src" path="studios"/>
 	<classpathentry kind="src" path="extensions"/>
