@@ -7,7 +7,7 @@
 	<classpathentry kind="src" path="extensions"/>
 	<classpathentry kind="src" path="labsupport"/>
 	<classpathentry kind="src" path="coursesupport"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-10-oracle">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
@@ -19,6 +19,6 @@
 	<classpathentry kind="lib" path="jars/jung-graph-impl-2.0.1.jar"/>
 	<classpathentry kind="lib" path="jars/jung-visualization-2.0.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
