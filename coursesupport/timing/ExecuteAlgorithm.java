@@ -70,6 +70,7 @@ public class ExecuteAlgorithm<T,U> {
 	 * @return
 	 */
 
+	@SuppressWarnings("unchecked")
 	public static<T,U> List<U> timeAlgorithm(
 			String name,
 			String className,
