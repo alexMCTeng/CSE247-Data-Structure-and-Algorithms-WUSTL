@@ -47,7 +47,7 @@ public class FromLecture extends QuietAlgorithm {
 	}
 
 	public static void main(String[] args) {
-		GenSizes sizes = GenSizes.arithmetic(0, 100, 1);
+		GenSizes sizes = GenSizes.arithmetic(1, 100, 1);
 		ExecuteAlgorithm.timeAlgorithm(
 				"Lecture", 
 				"studio1.FromLecture", 

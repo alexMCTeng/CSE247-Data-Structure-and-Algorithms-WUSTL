@@ -1,12 +1,8 @@
-Studio 1 write up
-
 Your TA's name:
-
-
 
 Students in your studio group:
 
-    Name        Student ID (begins with a 4)
+    Name        WUSTLKey (e.g. "jbuhler")
 	
 1.
 2.
@@ -19,30 +15,35 @@ Below each question, type in your short, to-the-point answers.
 
 Part A
 
-What are the exact, closed-form formulas for the ticker counts in:
+Question A1:
 
-	ProbA?   n   (I'm giving you this answer, make sure it agrees with what you saw)
+- ProbA
 
-	ProbB?  
+- ProbB
 
-	ProbC?
+- ProbC
 
-	ProbD?
+- ProbD
 
-	ProbE?
+- ProbE
 
-
-Part B
+Question B1:
 
 1.  c =         n0 =
 2.  c =         n0 =
 3.  c =         n0 =
 
-Part C
+Question C1:
 
 1.
-
 2.
 
-Part D
+Question D1:
 
+1.
+2.
+
+
+Question E1:
+
+Question E2:

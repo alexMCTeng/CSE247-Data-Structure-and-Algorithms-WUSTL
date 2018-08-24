@@ -49,7 +49,7 @@ public class ProbD extends QuietAlgorithm {
 	}
 
 	public static void main(String[] args) {
-		GenSizes sizes = GenSizes.arithmetic(0, 100, 1);
+		GenSizes sizes = GenSizes.arithmetic(1, 100, 1);
 		ExecuteAlgorithm.timeAlgorithm(
 				"ProbD", 
 				"studio1.ProbD", 
