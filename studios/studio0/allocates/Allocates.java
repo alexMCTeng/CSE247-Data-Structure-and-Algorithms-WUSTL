@@ -48,7 +48,7 @@ public class Allocates extends QuietAlgorithm {
 			//   taken by the above statement? 
 			//   Does it take one tick to allocate n integers?
 			//
-			ticker.tick();
+			ticker.tick(n);
 		}
 	}
 	

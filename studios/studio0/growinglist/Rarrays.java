@@ -65,21 +65,29 @@ abstract public class Rarrays extends QuietAlgorithm {
 		//  Make a new array of the new size
 		//       This should be a local variable, not an instance variable
 		//
+		int[] copy = new int[newSize];
+		
+		
 		
 		//  tick appropriately to account for Java initializing
 		//    the elements of this new array to 0
 		//
+		ticker.tick(newSize);
 		
 		//
 		//  Copy the elements of the current array to the new one
 		//    tick appropriately to account for each copied element
 		//
 		//
+		for (int i=0; i < array.length; i++) {
+			copy[i] = this.array[i];
+		}
 		
 		//  Assign your local array to the array reference, 
 		//    so that code elsewhere using the "array" instance variable
 		//    will now reference the new, bigger one
 		//
+		this.array = copy;
 	}
 	
 	/**
