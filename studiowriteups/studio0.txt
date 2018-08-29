@@ -13,15 +13,15 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question PS1: 
+Question PS1: The charts produced by Quadratic are more like an exponential function. Unlike the charts produced by linear, which are more like an linear function.
 
-Question PS2:
+Question PS2: The code in Quadratic has two loops in it.
 	
-Question PS3: 
+Question PS3: The shape of the plots are almost unchanged, but the values in ticker grow rapidly if I place ticker.tick(); in every operation.  
 	
-Question PS4: 
-		
-Question PS5: 
+Question PS4: In the most simple case, I would say the ticker and time value would be power of 2.
+
+Question PS5: The time still unchanged, the the ticker would reduce to 1.
 	
 Question A1:
 	
