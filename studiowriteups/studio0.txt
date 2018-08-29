@@ -19,7 +19,7 @@ Question PS2: The code in Quadratic has two loops in it.
 	
 Question PS3: The shape of the plots are almost unchanged, but the values in ticker grow rapidly if I place ticker.tick(); in every operation.  
 	
-Question PS4: In the most simple case, I would say the ticker and time value would be power of 2.
+Question PS4: In the most simple case, I would say the ticker and time value would be n square.
 
 Question PS5: The time still unchanged, the the ticker would reduce to 1.
 	
