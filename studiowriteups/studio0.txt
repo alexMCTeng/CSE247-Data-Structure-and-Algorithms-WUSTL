@@ -37,13 +37,13 @@ Question A6: formula for marks down binary method is m = (log base2 x) + 1. rati
 
 Question A7: choosing decimal would be more efficient than binary. tally is the less efficient way to mark the number down. Except the case of number equals to 1. decimal is better.  
 	
-Question C1:
+Question C1: It's a function of n square.
 
-Question C2:
+Question C2: It reflects that unless the array has no space, it doesn't need to double the space, but it still need to assign old array to new one. it takes time.
 
-Question C3:
+Question C3: The simple approximation would be like square root.
 	
-Question D1:
+Question D1: (n square + n ) / 2, it matches what we see at growsbyone
 	
 Question D2:
 
