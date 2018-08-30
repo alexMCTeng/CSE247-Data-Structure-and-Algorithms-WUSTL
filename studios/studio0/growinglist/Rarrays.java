@@ -41,8 +41,9 @@ abstract public class Rarrays extends QuietAlgorithm {
 	@Override
 	public void run() {
 		for (int i=0; i < n; ++i) {
-			if (i >= array.length)
+			if (i >= array.length) {
 				replaceArrayWithBiggerOne();
+			}
 			array[i] = i;
 			ticker.tick();
 		}
@@ -72,7 +73,7 @@ abstract public class Rarrays extends QuietAlgorithm {
 		//  tick appropriately to account for Java initializing
 		//    the elements of this new array to 0
 		//
-		ticker.tick(newSize);
+		ticker.tick();
 		
 		//
 		//  Copy the elements of the current array to the new one
@@ -95,6 +96,6 @@ abstract public class Rarrays extends QuietAlgorithm {
 	 * strategies about how much larger the new array should be.
 	 * @return the size of the new array that will replace the current one
 	 */
-	abstract public int getNewSize();
-	
+	 abstract public int getNewSize() ;
 }
+

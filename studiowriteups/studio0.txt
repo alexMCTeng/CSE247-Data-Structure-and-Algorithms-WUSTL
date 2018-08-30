@@ -23,19 +23,19 @@ Question PS4: In the most simple case, I would say the ticker and time value wou
 
 Question PS5: The time still unchanged, the the ticker would reduce to 1.
 	
-Question A1:
+Question A1: It's a straight horizontal line. Because no matter the value of n is, the for loop would execute exactly 100000000 times. 
 	
-Question A2:
+Question A2: Linear.
 	
-Question A3:
+Question A3: the value of n affects the loop.
 	
-Question A4:
+Question A4: Still linear. the tick value is different because we tick n times for a array with size n. so bigger size of array, takes more time. n ticks to create with an array with n.
 
-Question A5:
+Question A5: The decimal group finish first.
 
-Question A6:
+Question A6: logx - 1 = n and truncate. x is the number, and n is the marks that decimal group needs to write down the number.
 
-Question A7:
+Question A7: 
 	
 Question C1:
 
