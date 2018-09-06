@@ -25,8 +25,7 @@ abstract public class AddLastBase extends QuietAlgorithm {
 	@Override
 	public void run() {
 		for (int i=0; i < this.n; ++i) {
-			ticker.tick();  // account for loop iterations
-			list.addLast(random.nextInt());
+		    list.addLast(random.nextInt());
 		}
 	}
 

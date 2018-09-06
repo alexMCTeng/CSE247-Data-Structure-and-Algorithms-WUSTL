@@ -37,7 +37,6 @@ public class Size extends QuietAlgorithm {
 	@Override
 	public void run() {
 		int size = list.getSize();
-		ticker.tick();  // for assignment to size
 	}
 
 	public String toString() {

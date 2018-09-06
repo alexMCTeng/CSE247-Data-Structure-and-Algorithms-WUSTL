@@ -62,10 +62,12 @@ public class LinkedListWithTail<T> implements List<T> {
 	@Override
 	public int getSize() {
 		int ans = 0;
+		ticker.tick(2); // init ans; nitialization stmt in for() loop
 		for (ListNode<T> p = this.head; p != null; p = p.next) {
 			ans = ans + 1;
-			ticker.tick();
+			ticker.tick(3); // for 3 statements per loop iter
 		}
+		ticker.tick(); // for last test in for loop
 		return ans;
 	}
 
