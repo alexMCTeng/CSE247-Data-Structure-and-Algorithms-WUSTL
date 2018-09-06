@@ -17,9 +17,9 @@ Part A
 
 Question A1:
 
-- ProbA
+- ProbA: n-1;
 
-- ProbB
+- ProbB 
 
 - ProbC
 
