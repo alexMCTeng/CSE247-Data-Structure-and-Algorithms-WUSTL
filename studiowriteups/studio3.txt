@@ -15,33 +15,18 @@ Below each question, type in your short, to-the-point answers.
 
 Question A1:
 
-- ProbA
+Question A2:
 
-- ProbB
-
-- ProbC
-
-- ProbD
-
-- ProbE
+Question A3:
 
 Question B1:
 
-1.  c =         n0 =
-2.  c =         n0 =
-3.  c =         n0 =
+Question B2:
+
+Question B3:
 
 Question C1:
 
-1.
-2.
+Question C2:
 
-Question D1:
-
-1.
-2.
-
-
-Question E1:
-
-Question E2:
+Question C3:
