@@ -13,8 +13,6 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Part A
-
 Question A1:
 
 - ProbA: n-1;
