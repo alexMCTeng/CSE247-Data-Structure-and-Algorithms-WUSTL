@@ -19,6 +19,7 @@ public class LinkedList<T> implements List<T> {
 			p.value = thing;
 			head = p;
 			ticker.tick(3);  // for the 3 statements above
+			
 		}
 		else {
 			ListNode<T> q = new ListNode<T>();

@@ -10,13 +10,17 @@ import timing.Ticker;
  * @param <T>
  */
 public class LinkedListWithTail<T> implements List<T> {
-	
+
 	private ListNode<T> head;
 	private Ticker ticker;
-	
+	private ListNode<T> tail;
+	private int length;
+
 	public LinkedListWithTail(Ticker ticker) {
 		this.head = null;   // nothing in our list yet
+		this.tail = null;
 		this.ticker = ticker;
+		this.length = 0;
 	}
 
 	/**
@@ -30,45 +34,55 @@ public class LinkedListWithTail<T> implements List<T> {
 	 */
 	@Override
 	public void addLast(T thing) {
+		length++;
 		if (head == null) {
 			ListNode<T> p = new ListNode<T>();
 			p.value = thing;
 			head = p;
-			ticker.tick(3);  // for the 3 statements above
+			tail = p;
+			ticker.tick(4);  // for the 3 statements above
 		}
 		else {
 			ListNode<T> q = new ListNode<T>();
 			q.value = thing;
 			// search for the end of the list -- modify this
 			// code to use (and maintain) the tail pointer!
-			//
-			ListNode<T> p = head;
-			while (p.next != null) {
-				p = p.next;
-				ticker.tick(2);
-			}
-			ticker.tick(1); // for the last test in the "while" loop
-			
+			//			ListNode<T> p = head;
+
+
+			ListNode<T> p = tail;
+
+			//			while (p.next != null) {
+			//				p = p.next;
+			//				ticker.tick(2);
+			//			}
+
 			p.next = q;
-			ticker.tick(4);  // for the 4 statements not part of the "while" loop
+			tail = q;
+			ticker.tick(5);  // for the 4 statements not part of the "while" loop
 		}
 		ticker.tick(1); // for outermost "if" test
 	}
-	
+
 	/**
 	 * Modify this method so that getting the size of this list
 	 * takes Theta(1) (constant) time.
 	 */
 	@Override
 	public int getSize() {
-		int ans = 0;
-		ticker.tick(2); // init ans; nitialization stmt in for() loop
-		for (ListNode<T> p = this.head; p != null; p = p.next) {
-			ans = ans + 1;
-			ticker.tick(3); // for 3 statements per loop iter
-		}
-		ticker.tick(); // for last test in for loop
-		return ans;
+//		ticker.tick();
+//		return length;
+//		int ans = 0;
+//		ticker.tick(2); // init ans; initialization stmt in for() loop
+//		for (ListNode<T> p = this.head; p != null; p = p.next) {
+//			ans = ans + 1;
+//			ticker.tick(3); // for 3 statements per loop iter
+//		}
+//		ticker.tick(); // for last test in for loop
+//		return ans;
+		ticker.tick();
+		return length;
+
 	}
 
 	/**
@@ -85,7 +99,7 @@ public class LinkedListWithTail<T> implements List<T> {
 		}
 		return p.value;
 	}
-	
+
 	public String toString() {
 		String ans = "[ ";
 		for (ListNode<T> p = head; p != null; p = p.next) {
@@ -94,5 +108,5 @@ public class LinkedListWithTail<T> implements List<T> {
 		ans = ans + "]";
 		return ans;
 	}
-	
+
 }

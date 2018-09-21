@@ -13,26 +13,26 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: The curve is n^2.
 
-Question A2:
+Question A2: We add a nth value, it takes n-1 ticks to add one item. The summation would be n^2
 
-Question B1:
+Question B1: It's a linear function because we don't a loop to find the end of the list. It's only take 5 ticks to add a element to the end of the list.
 
-Question B2:
+Question B2: One more pointer to a list node.
 
-Question B3:
+Question B3: It's not worthwhile if n = 1, in this case, it would be the same. But we waste a space to create list node. In other case, it'd be pretty good to add the node at the end of list. 
 
-Question C1:
+Question C1: 3n + 3 ticks. The loop runs n times, and each time would count 3 ticks, plus 3 tick outside the loop.
 
-Question C2:
+Question C2: We introduce length instant variable, and add one to it each time we add a number in list.
 
-Question C3:
+Question C3: I just ran it! We add a single operation. 
 
-Question D1:
+Question D1: \Theta(n);
 
-Question D2:
+Question D2: add another pointer, and change the position of the pointer (mid.next). 
 
-Question D3:
+Question D3: int max = null; each time we add element, check if it's greater than max, if yes, update the max value.
 
-Question D4:
+Question D4: Seems like impossible. When we delete a number that's max, then we have to go through all the linkedlist to find the max. 

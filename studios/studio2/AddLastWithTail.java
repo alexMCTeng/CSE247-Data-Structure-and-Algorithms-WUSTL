@@ -9,6 +9,7 @@ import timing.utils.IntArrayGenerator;
 public class AddLastWithTail extends AddLastBase {
 		
 	public AddLastWithTail() {
+		
 	}
 
 	@Override

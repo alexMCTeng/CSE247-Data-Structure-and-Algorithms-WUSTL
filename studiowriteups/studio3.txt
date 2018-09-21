@@ -13,17 +13,15 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: int, double, boolean, long
 
-Question A2:
+Question A2: negative, positive, negative, 0
 
-Question A3:
+Question A3: Japan Chronology, one day shows eariler than the other
 
-Question B1:
+Question B1: 
 
-Question B2:
-
-Question B3:
+Question B2: isEmpty and add takes constant time, and extractMin would be linear.
 
 Question C1:
 
