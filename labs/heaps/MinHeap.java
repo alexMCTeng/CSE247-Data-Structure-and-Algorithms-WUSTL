@@ -160,6 +160,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		int firstChild = where*2;
 		int secondChild = where*2 + 1;
+		ticker.tick(3);
 		if(secondChild <= size) {//if a parent has second children, parent would need to compare with 2 children.
 			if(array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) >= 0) {
 				Decreaser<T> temp = array[secondChild];
@@ -167,6 +168,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[where] = temp;
 				array[where].loc = where;
 				array[secondChild].loc = where*2 + 1;
+				ticker.tick(7);
 				heapify(secondChild);
 			}
 			else if (array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) <0) {
@@ -175,6 +177,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[where] = temp;
 				array[where].loc = where;
 				array[firstChild].loc = where*2;
+				ticker.tick(7);
 				heapify(firstChild);
 			}
 			else if (array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) > 0){
@@ -183,6 +186,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[where] = temp;
 				array[where].loc = where;
 				array[secondChild].loc = where*2 + 1;
+				ticker.tick(7);
 				heapify(secondChild);
 			}
 			else if (array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) == 0){
@@ -191,9 +195,11 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[where] = temp;
 				array[where].loc = where;
 				array[secondChild].loc = where*2 + 1;
+				ticker.tick(7);
 				heapify(secondChild);
 			}
 			else {
+				ticker.tick();
 				return;
 			}
 		}
@@ -204,12 +210,16 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[where] = temp;
 				array[where].loc = where;
 				array[firstChild].loc = where * 2;
+				ticker.tick(7);
+				heapify(firstChild);
 			}
 			else {
+				ticker.tick();
 				return;
 			}
 		}
 		else {
+			ticker.tick();
 			return;
 		}
 	}
