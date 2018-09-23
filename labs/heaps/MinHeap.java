@@ -211,7 +211,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[where].loc = where;
 				array[firstChild].loc = where * 2;
 				ticker.tick(7);
-				heapify(firstChild);
+				heapify(firstChild);//not sure whether I need this or not......
 			}
 			else {
 				ticker.tick();
