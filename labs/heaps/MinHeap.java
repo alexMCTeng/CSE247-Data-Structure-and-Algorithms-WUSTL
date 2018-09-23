@@ -69,6 +69,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		// 
 		array[size] = ans;
 		decrease(size);//?
+		ticker.tick(4);
 		return ans;
 	}
 
@@ -100,24 +101,21 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 	 */
 	void decrease(int loc) {
 		//
-		// As described in lecture
+		// As described in lecture 
 		// the only parameter we use here is location, not the value?
 		// say I want the element at the nth loc, decrease to the value m.
-		if (loc <= 1) {
+		if (loc <= 1) { 
+			ticker.tick(1);
 			return;
 		}
-		T children = array[loc].getValue();
-		T parent = array[loc/2].getValue();
-		T temp = children;
-		Decreaser<T> temp1 = array[loc]; // swap the value and update the handle
-		if (children.compareTo(parent) < 0) {
-			
-			children = parent;
-			parent = temp;
+	
+		if (array[loc].getValue().compareTo(array[loc/2].getValue()) < 0) {
+			Decreaser<T> temp1 = array[loc]; // use this to swap the value
 			array[loc] = array[loc/2];
 			array[loc/2] = temp1;
 			array[loc].loc = loc;
 			array[loc/2].loc = loc/2;
+			ticker.tick(6);
 			decrease(loc/2); //call it again, recursively
 		}
 	}
@@ -143,8 +141,8 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		array[1].loc = 1;
 		array[size] = null;
 		this.size = size - 1;
+		ticker.tick(6);
 		heapify(1);
-
 		return ans;
 	}
 
@@ -162,7 +160,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		int firstChild = where*2;
 		int secondChild = where*2 + 1;
-		if(secondChild <= size) {//if a parent has second children, parent would need to compare with 2 children. 
+		if(secondChild <= size) {//if a parent has second children, parent would need to compare with 2 children.
 			if(array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) >= 0) {
 				Decreaser<T> temp = array[secondChild];
 				array[secondChild] = array[where];
