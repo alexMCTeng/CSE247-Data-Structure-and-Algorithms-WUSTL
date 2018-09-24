@@ -163,6 +163,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		ticker.tick(3);
 		if(secondChild <= size) {//if a parent has second children, parent would need to compare with 2 children.
 			if(array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) >= 0) {
+				//If the secondChild is less then its parent, and firstChild is larger than parent, swap seconChild and parent.
 				Decreaser<T> temp = array[secondChild];
 				array[secondChild] = array[where];
 				array[where] = temp;
@@ -171,7 +172,8 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				ticker.tick(7);
 				heapify(secondChild);
 			}
-			else if (array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) <0) {
+			else if (array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) <0) {
+				//If the secondChild and firstChild are both less than the parent, and firstChild's less than secondChild, swap with parent with firstChild
 				Decreaser<T> temp = array[firstChild];
 				array[firstChild] = array[where];
 				array[where] = temp;
@@ -180,7 +182,8 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				ticker.tick(7);
 				heapify(firstChild);
 			}
-			else if (array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) > 0){
+			else if (array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) > 0){
+				//If the secondChild and firstChild are both less than the parent, and secondChild's less than firstChild, swap with parent with secondChild
 				Decreaser<T> temp = array[secondChild];
 				array[secondChild] = array[where];
 				array[where] = temp;
@@ -189,7 +192,8 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				ticker.tick(7);
 				heapify(secondChild);
 			}
-			else if (array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) == 0){
+			else if (array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[secondChild].getValue()) == 0){
+				//If secondChild and firshChild are equal and less than parent, just swap with the secondChild
 				Decreaser<T> temp = array[secondChild];
 				array[secondChild] = array[where];
 				array[where] = temp;
@@ -197,6 +201,16 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				array[secondChild].loc = where*2 + 1;
 				ticker.tick(7);
 				heapify(secondChild);
+			}
+			else if (array[secondChild].getValue().compareTo(array[where].getValue()) >= 0 && array[firstChild].getValue().compareTo(array[where].getValue()) < 0) {
+				//If the secondChild isn't less than parent, then only need to check if firstChild less than parent or not.
+				Decreaser<T> temp = array[firstChild];
+				array[firstChild] = array[where];
+				array[where] = temp;
+				array[where].loc = where;
+				array[firstChild].loc = where*2;
+				ticker.tick(7);
+				heapify(firstChild);
 			}
 			else {
 				ticker.tick();
