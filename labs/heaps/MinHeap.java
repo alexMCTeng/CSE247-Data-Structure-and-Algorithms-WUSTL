@@ -102,13 +102,11 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 	void decrease(int loc) {
 		//
 		// As described in lecture 
-		// the only parameter we use here is location, not the value?
-		// say I want the element at the nth loc, decrease to the value m.
+
 		if (loc <= 1) { 
 			ticker.tick(1);
 			return;
 		}
-	
 		if (array[loc].getValue().compareTo(array[loc/2].getValue()) < 0) {
 			Decreaser<T> temp1 = array[loc]; // use this to swap the value
 			array[loc] = array[loc/2];

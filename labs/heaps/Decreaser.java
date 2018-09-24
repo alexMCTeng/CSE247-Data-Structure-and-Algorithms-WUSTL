@@ -44,6 +44,7 @@ public class Decreaser<T extends Comparable<T>> {
 			// Now that the value has decreased, it may need to move
 			//   toward the root to maintain the heap property
 			//
+			
 			heap.decrease(loc);
 		}
 		else if (newvalue.compareTo(thing) == 0) {
