@@ -69,7 +69,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		// 
 		array[size] = ans;
 		decrease(size);//?
-		ticker.tick(4);
+		ticker.tick(3);
 		return ans;
 	}
 
@@ -139,7 +139,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		array[1].loc = 1;
 		array[size] = null;
 		this.size = size - 1;
-		ticker.tick(6);
+		ticker.tick(5);
 		heapify(1);
 		return ans;
 	}
@@ -158,7 +158,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		int firstChild = where*2;
 		int secondChild = where*2 + 1;
-		ticker.tick(3);
+		ticker.tick(2);
 		if(secondChild <= size) {//if a parent has second children, parent would need to compare with 2 children.
 			if(array[secondChild].getValue().compareTo(array[where].getValue()) < 0 && array[firstChild].getValue().compareTo(array[where].getValue()) >= 0) {
 				//If the secondChild is less then its parent, and firstChild is larger than parent, swap seconChild and parent.
@@ -211,7 +211,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				heapify(firstChild);
 			}
 			else {
-				ticker.tick();
+				ticker.tick(1);
 				return;
 			}
 		}
@@ -226,12 +226,12 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 				heapify(firstChild);//not sure whether I need this or not......
 			}
 			else {
-				ticker.tick();
+				ticker.tick(1);
 				return;
 			}
 		}
 		else {
-			ticker.tick();
+			ticker.tick(1);
 			return;
 		}
 	}
