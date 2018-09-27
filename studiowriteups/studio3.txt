@@ -17,9 +17,9 @@ Question A1: int, double, boolean, long
 
 Question A2: negative, positive, negative, 0
 
-Question A3: Japan Chronology, one day shows eariler than the other
+Question A3: Japan Chronology, one day shows earlier than the other
 
-Question B1: 
+Question B1: addLast would takes constant times, addFirst would be linear since we need to move all the items to the left.
 
 Question B2: isEmpty and add takes constant time, and extractMin would be linear.
 

@@ -13,24 +13,24 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: T(n) = 2*T(n-1) + c, we do 2 recursive calls and size - 1
 
-Question A2:
+Question A2: 2^n
 
-Question A3:
+Question A3: \sum k*2^j
 
-Question B1:
+Question B1: \theta(N^3)
 
 Question B2:
 
 Question B3:
 
-Question C1:
+Question C1: nlogn
 
-Question C2:
+Question C2: nlogn
 
-Question C3:
+Question C3: nlogn
 
-Question C4:
+Question C4:no
 
-Question C5:
+Question C5:constant doesn't matter

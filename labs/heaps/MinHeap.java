@@ -111,7 +111,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 			Decreaser<T> temp1 = array[loc]; // use this to swap the value
 			array[loc] = array[loc/2];
 			array[loc/2] = temp1;
-			array[loc].loc = loc;
+			array[loc].loc = loc;//update the loc 
 			array[loc/2].loc = loc/2;
 			ticker.tick(6);
 			decrease(loc/2); //call it again, recursively
@@ -135,12 +135,12 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		// FIXME
 		//
-		array[1] = array[size];
-		array[1].loc = 1;
-		array[size] = null;
-		this.size = size - 1;
+		array[1] = array[size];//put the last element to the root
+		array[1].loc = 1;//update the loc
+		array[size] = null;//set the original spot of last element to be null
+		size = size - 1;//decrement
 		ticker.tick(5);
-		heapify(1);
+		heapify(1);//call heapify(1) because the value we want to swap downward is always at array[1]
 		return ans;
 	}
 

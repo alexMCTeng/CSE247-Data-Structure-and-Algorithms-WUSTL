@@ -70,8 +70,7 @@ public class LinkedListWithTail<T> implements List<T> {
 	 */
 	@Override
 	public int getSize() {
-//		ticker.tick();
-//		return length;
+
 //		int ans = 0;
 //		ticker.tick(2); // init ans; initialization stmt in for() loop
 //		for (ListNode<T> p = this.head; p != null; p = p.next) {

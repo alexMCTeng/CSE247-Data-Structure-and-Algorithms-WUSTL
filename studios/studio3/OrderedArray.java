@@ -16,7 +16,7 @@ public class OrderedArray<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		// FIXME
 		//
-		return this.size == 0;
+		return size == 0;
 	}
 
 	@Override
@@ -24,21 +24,19 @@ public class OrderedArray<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		// FIXME
 		//
-		if(size==0) {
+		if(size==0) {//nothing in the array, then put it in array[0]
 			this.array[0] = thing;
+			size++;//increment size
 		}
-		for (int i=size-1; i>=0; i--) {
-
-			if (this.array[i].compareTo(thing)>0) {
-				this.array[i+1] = this.array[i];
+		else {
+			for (int i=size-1; i>=0; i--) {//starting from the last element in the array
+				if (this.array[i].compareTo(thing)>0) {// if array[i] > thing
+					this.array[i+1] = this.array[i];//assign array[i] to array[i+1], that is, move to the right
+					this.array[i] = thing;//then insert thing into array[i], then keep looping
+				}
 			}
-			else {
-				this.array[i+1] = thing;
-				size++;
-				return;
-			}
+			size++;//increment size
 		}
-
 	}
 
 	@Override
@@ -46,15 +44,11 @@ public class OrderedArray<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		// FIXME
 		//
-		if(size==0) {
-			return null;
+			T min = this.array[0];//If the implementation is correct, then the smallest element would appear at array[0]
+			for (int  j=1; j<size;j++) {//using for loop to move the remaining element to the left
+				this.array[j-1] = this.array[j];
+			}	
+			size--;//decrement size
+			return min;
 		}
-		T min = this.array[0];
-		for (int  j=1; j<size;j++) {
-			this.array[j-1] = this.array[j];
-		}
-		size--;
-		return min;
 	}
-
-}
