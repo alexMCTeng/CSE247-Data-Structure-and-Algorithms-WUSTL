@@ -117,6 +117,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 			decrease(loc/2); //call it again, recursively
 		}
 	}
+	
 
 	/**
 	 * Described in lecture, this method will return a minimum element from
