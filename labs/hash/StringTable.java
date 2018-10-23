@@ -25,10 +25,10 @@ public class StringTable {
     @SuppressWarnings("unchecked")
 	public StringTable(int nBuckets)
     {
-	this.nBuckets = nBuckets;
-	buckets = new LinkedList[nBuckets];
+    	this.nBuckets = nBuckets;
+    	buckets = new LinkedList[nBuckets];
 	
-	// TODO - fill in the rest of this method to initialize your table
+    	// TODO - fill in the rest of this method to initialize your table
     }
     
     
@@ -41,9 +41,9 @@ public class StringTable {
      */
     public boolean insert(Record r) 
     {  
-	// TODO - implement this method
+    	// TODO - implement this method
 	
-	return false;
+    	return false;
     }
     
     
@@ -55,9 +55,9 @@ public class StringTable {
      */
     public Record find(String key) 
     {
-	// TODO - implement this method
+    	// TODO - implement this method
 	
-	return null;
+    	return null;
     }
     
     
@@ -69,7 +69,7 @@ public class StringTable {
      */
     public void remove(String key) 
     {
-	// TODO - implement this method
+    	// TODO - implement this method
     }
     
 
@@ -88,9 +88,9 @@ public class StringTable {
      */
     private int toIndex(int hashcode)
     {
-	// Fill in your own hash function here
+    	// Fill in your own hash function here
 	
-	return 0;
+    	return 0;
     }
     
     
@@ -107,16 +107,16 @@ public class StringTable {
      */
     int stringToHashCode(String key)
     {
-	int A = 1952786893;
+    	int A = 1952786893;
 	
-	int v = A;
-	for (int j = 0; j < key.length(); j++)
+    	int v = A;
+    	for (int j = 0; j < key.length(); j++)
 	    {
-		char c = key.charAt(j);
-		v = A * (v + (int) c + j) >> 16;
+    		char c = key.charAt(j);
+    		v = A * (v + (int) c + j) >> 16;
 	    }
 	
-	return v;
+    	return v;
     }
 
     /**
@@ -125,22 +125,22 @@ public class StringTable {
      */
     public String toString() 
     {
-	StringBuilder sb = new StringBuilder();
+    	StringBuilder sb = new StringBuilder();
 	
-	for(int i = 0; i < nBuckets; i++) 
+    	for(int i = 0; i < nBuckets; i++) 
 	    {
-		sb.append(i+ "  ");
-		if (buckets[i] == null) 
+    		sb.append(i+ "  ");
+    		if (buckets[i] == null) 
 		    {
-			sb.append("\n");
-			continue;
+    			sb.append("\n");
+    			continue;
 		    }
-		for (Record r : buckets[i]) 
+    		for (Record r : buckets[i]) 
 		    {
-			sb.append(r.key + "  ");
+    			sb.append(r.key + "  ");
 		    }
-		sb.append("\n");
+    		sb.append("\n");
 	    }
-	return sb.toString();
+    	return sb.toString();
     }
 }
