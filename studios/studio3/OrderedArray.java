@@ -28,6 +28,10 @@ public class OrderedArray<T extends Comparable<T>> implements PriorityQueue<T> {
 			this.array[0] = thing;
 			size++;//increment size
 		}
+		else if(this.array[size-1].compareTo(thing)<= 0) {
+			this.array[size] = thing;
+			size++;
+		}
 		else {
 			for (int i=size-1; i>=0; i--) {//starting from the last element in the array
 				if (this.array[i].compareTo(thing)>0) {// if array[i] > thing
