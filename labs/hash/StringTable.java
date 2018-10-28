@@ -50,10 +50,8 @@ public class StringTable {
 			return true;
 		}
 		else {
-			ListIterator<Record> temp = this.buckets[index].listIterator();
-			while (temp.hasNext()) {
-				Record ans = temp.next();
-				if (ans.key.equals(r.key)) {
+			for (int i = 0; i < this.buckets[index].size(); i++) {
+				if (this.buckets[index].get(i).key.equals(r.key)) {
 					return false;
 				}
 			}
@@ -78,13 +76,12 @@ public class StringTable {
 			return null;
 		}
 		else {
-			ListIterator<Record> temp = this.buckets[index].listIterator();
-			while(temp.hasNext()) {
-				Record ans = temp.next();
-				if (ans.key.equals(key)) {
-					return ans;
+			for(int i = 0; i < this.buckets[index].size();i++) {
+				if (this.buckets[index].get(i).key.equals(key)){
+					return this.buckets[index].get(i);
 				}
 			}
+
 		}
 		return null;
 	}
@@ -103,15 +100,14 @@ public class StringTable {
 		if (this.buckets[index] == null) {
 			return;
 		}
-		ListIterator<Record> temp = this.buckets[index].listIterator();
-		while(temp.hasNext()) {
-			Record ans = temp.next();
-			if(ans.key.equals(key)) {
-				temp.remove();
-				size--;
+		for(int i = 0; i < this.buckets[index].size();i++) {
+			if (this.buckets[index].get(i).key.equals(key)) {
+				this.buckets[index].remove(i);
+				this.size--;
 			}
 		}
 	}
+
 
 
 	/**
@@ -132,7 +128,7 @@ public class StringTable {
 		// Fill in your own hash function here
 		double A = (Math.sqrt(5)-1)/2;
 
-		return Math.abs((int)(((hashcode*A) % 1.0 ) * this.nBuckets));
+		return (int)(Math.abs(((hashcode*A) % 1.0 )) * this.nBuckets);
 	}
 
 
