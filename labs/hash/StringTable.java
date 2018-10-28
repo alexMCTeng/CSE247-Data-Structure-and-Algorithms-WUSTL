@@ -29,8 +29,6 @@ public class StringTable {
 		buckets = new LinkedList[nBuckets];
 		// At the time of initialization, the StringTable is empty
 		this.size = 0;
-
-		// TODO - fill in the rest of this method to initialize your table
 	}
 
 
@@ -66,7 +64,6 @@ public class StringTable {
 		// increment size by 1
 		this.size++;
 		return true;
-
 	}
 
 
@@ -134,9 +131,7 @@ public class StringTable {
 	 * Otherwise, you can use the floating-point computation.
 	 */
 	private int toIndex(int hashcode)
-	{
-		// Fill in your own hash function here
-		
+	{		
 		// using the guide on the lecture slides, set A to Knuth
 		double A = (Math.sqrt(5)-1)/2;
 		return (int)(Math.abs(((hashcode*A) % 1.0 )) * this.nBuckets);
