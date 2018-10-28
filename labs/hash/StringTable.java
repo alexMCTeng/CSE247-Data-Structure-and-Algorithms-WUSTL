@@ -27,6 +27,7 @@ public class StringTable {
 	{
 		this.nBuckets = nBuckets;
 		buckets = new LinkedList[nBuckets];
+		// At the time of initialization, the StringTable is empty
 		this.size = 0;
 
 		// TODO - fill in the rest of this method to initialize your table
@@ -42,23 +43,30 @@ public class StringTable {
 	 */
 	public boolean insert(Record r) 
 	{  
+		// Using StringToHashCode and toIndex to turn key into index.
 		int index = toIndex(stringToHashCode(r.key));
+		// If at the insertion, there's no linked list, declare one.
 		if (this.buckets[index] == null) {
 			this.buckets[index] = new LinkedList<Record>();
+			// insert the record
 			this.buckets[index].add(r);
+			// increment size by 1
 			this.size++;
 			return true;
 		}
-		else {
-			for (int i = 0; i < this.buckets[index].size(); i++) {
-				if (this.buckets[index].get(i).key.equals(r.key)) {
-					return false;
-				}
+		// iterate the given index of linked list array, if there's a record with same key, 
+		// return false
+		for (int i = 0; i < this.buckets[index].size(); i++) {
+			if (this.buckets[index].get(i).key.equals(r.key)) {
+				return false;
 			}
-			buckets[index].add(r);
-			this.size++;
-			return true;
 		}
+		// after iterate through the whole linked list, if not return false, insert it.
+		buckets[index].add(r);
+		// increment size by 1
+		this.size++;
+		return true;
+
 	}
 
 
@@ -70,18 +78,18 @@ public class StringTable {
 	 */
 	public Record find(String key) 
 	{
-		// TODO - implement this method
 		int index = toIndex(stringToHashCode(key));
+		// if the given index of linked list array is empty, return null
 		if(this.buckets[index] == null) {
 			return null;
 		}
-		else {
-			for(int i = 0; i < this.buckets[index].size();i++) {
-				if (this.buckets[index].get(i).key.equals(key)){
-					return this.buckets[index].get(i);
-				}
+		// iterate through the whole linked list, 
+		// using .get.key.equals(key) to assess if the keys are the same
+		// if yes, return the record.
+		for(int i = 0; i < this.buckets[index].size();i++) {
+			if (this.buckets[index].get(i).key.equals(key)){
+				return this.buckets[index].get(i);
 			}
-
 		}
 		return null;
 	}
@@ -95,14 +103,16 @@ public class StringTable {
 	 */
 	public void remove(String key) 
 	{
-		// TODO - implement this method
 		int index = toIndex(stringToHashCode(key));
 		if (this.buckets[index] == null) {
 			return;
 		}
+		// Using get.key.equals(key) to access if the keys are the same
+		// if yes, remove it.
 		for(int i = 0; i < this.buckets[index].size();i++) {
 			if (this.buckets[index].get(i).key.equals(key)) {
 				this.buckets[index].remove(i);
+				// if remove is successful, decrement size by 1
 				this.size--;
 			}
 		}
@@ -126,8 +136,9 @@ public class StringTable {
 	private int toIndex(int hashcode)
 	{
 		// Fill in your own hash function here
+		
+		// using the guide on the lecture slides, set A to Knuth
 		double A = (Math.sqrt(5)-1)/2;
-
 		return (int)(Math.abs(((hashcode*A) % 1.0 )) * this.nBuckets);
 	}
 
