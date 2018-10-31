@@ -18,7 +18,6 @@ public class Record {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
-		result = prime * result + zipcode;
 		return result;
 	}
 
@@ -33,12 +32,8 @@ public class Record {
 		Record other = (Record) obj;
 		if (id != other.id)
 			return false;
-		if (zipcode != other.zipcode)
-			return false;
 		return true;
 	}
-
-
 	
 	
 
