@@ -111,6 +111,7 @@ public class StringTable {
 				this.buckets[index].remove(i);
 				// if remove is successful, decrement size by 1
 				this.size--;
+				return;
 			}
 		}
 	}
