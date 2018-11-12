@@ -214,6 +214,10 @@ public class TestBalancedTree {
 	    sortTest(genUniqueInts(i), false);
 	    System.out.println("done");
 	}
+
+        System.out.println("Testing unique size 10000"); 
+	sortTest(genUniqueInts(10000), false);
+        System.out.println("done");
     }
     
     
