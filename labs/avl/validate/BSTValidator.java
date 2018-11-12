@@ -32,7 +32,7 @@ public class BSTValidator<T extends Comparable<T>> {
             oops += "What went wrong: " + t.getMessage() + "\n";
 	    oops += "Tree that triggered this problem:" + "\n";
 	    if (tree.size > 100)
-		oops + " (not printing large tree, n=" + tree.size + "\n";
+		oops += " (not printing large tree, n=" + tree.size + ")\n";
 	    else
 		oops += TreeToStrings.toTree(tree);
             t.printStackTrace();
