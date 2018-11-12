@@ -200,27 +200,6 @@ public class TestBalancedTree {
 		     expectedSize + " but it did not", expectedSize, tree.size);
     }
 
-
-    //
-    //Test the Insert and extract min methods of the priority queue by generating
-    //an unsorted array of integers, Inserting that array into a priority queue, and
-    //then comparing the output of extractMin() with the respective value in the
-    //sorted starting array
-    //
-    @Test
-	public void testViaSorting() {
-	for (int i=0; i < 10; ++i) {
-	    System.out.println("Testing unique size " + i);
-	    sortTest(genUniqueInts(i), false);
-	    System.out.println("done");
-	}
-
-        System.out.println("Testing unique size 10000"); 
-	sortTest(genUniqueInts(10000), false);
-        System.out.println("done");
-    }
-    
-    
     @Test
 	public void testRebalanceSmall() {
 	BSTValidator<Integer> bstv = genTree();
@@ -265,27 +244,4 @@ public class TestBalancedTree {
 	return ans;
     }
     
-    private void sortTest(Iterable<Integer> iter, boolean show) {
-	BSTValidator<Integer> bstv = genTree();
-	AVLTree<Integer> tree = bstv.tree;
-	int num = 0;
-	assertEquals("Wrong tree size:", 0, tree.size);
-	for (Integer n : iter) {
-	    bstv.check();
-	    tree.insert(n);
-	    bstv.check();
-	    ++num;
-	}
-	assertEquals("Wrong tree size:", num, tree.size);
-	if (show) {
-	    System.out.println(TreeToStrings.toTree(tree));
-	}
-	
-	int[] copy = new int[num];
-	
-	for (Integer n : iter) {
-	    copy[--num] = n;
-	}
-	Arrays.sort(copy);
-    }
 }
