@@ -28,13 +28,18 @@ public class BSTValidator<T extends Comparable<T>> {
             before = TreeToStrings.toTree(tree);
         } catch (Throwable t) {
             String oops = "\nTree before the problem occurred:\n";
-            oops += before + "\n";
+	    if (tree.size > 100)
+		oops += " (not printing large tree, n=" + tree.size + ")\n";
+	    else
+		oops += before + "\n";
+            
             oops += "What went wrong: " + t.getMessage() + "\n";
 	    oops += "Tree that triggered this problem:" + "\n";
 	    if (tree.size > 100)
 		oops += " (not printing large tree, n=" + tree.size + ")\n";
 	    else
 		oops += TreeToStrings.toTree(tree);
+
             t.printStackTrace();
             throw new BSTValidationError(t + "" + oops);
         }
