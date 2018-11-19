@@ -33,7 +33,7 @@ public class Point {
 	}
 	public int HashCode(int x, int y) {
 		int c = this.x * this.y;
-		double a = (Math.sqrt(5)+1)/2;
+		double a = (Math.sqrt(5)-1)/2;
 		return (int) ((c*a)%1.0) * 6;
 	}
 
