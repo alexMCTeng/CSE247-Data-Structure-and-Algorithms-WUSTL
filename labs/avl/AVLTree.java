@@ -245,7 +245,8 @@ public class AVLTree<T extends Comparable<T>> {
 			if (root.right == null) {
 				//	if the root has no child, return 0
 				return 0;
-			} else { //	if the root doesn't have left child but has a right one, return the height of right + 1
+			} else { //	if the root doesn't have left child but has a right one, 
+					//	return the height of right + 1
 				return root.right.height + 1;
 			}
 		//	if left is not null, but right == null, since null has height of -1, so -1 - left
@@ -337,6 +338,11 @@ public class AVLTree<T extends Comparable<T>> {
 	//
 	// RETURNS: the new root after rotation.
 	//
+	/**
+	 * Same thing here, comment out the unnecessary codes.
+	 * @param root
+	 * @return
+	 */
 	private TreeNode<T> leftRotate(TreeNode<T> root) {
 		TreeNode<T> right = root.right;
 		TreeNode<T> shift = right.left;
