@@ -130,6 +130,7 @@ public class AVLTree<T extends Comparable<T>> {
 			// add new element as leaf of tree
 			TreeNode<T> newNode = new TreeNode<T>(value);
 			size++;
+			// set the height of the newNode to 0
 			newNode.height = 0;
 			return newNode;
 		} else {
@@ -145,7 +146,9 @@ public class AVLTree<T extends Comparable<T>> {
 				root.setRight(insertHelper(value, root.right));
 			}
 		}
+		//	after insertion, update the height of the subtree of a given root
 		updateHeight(root);
+		//	rebalance the subtree after update the height of a given root
 		return rebalance(root);
 	}
 
@@ -202,6 +205,7 @@ public class AVLTree<T extends Comparable<T>> {
 				root.setRight(removeHelper(value, root.right));
 			}
 		}
+		//	just like insertHelper, after remove a node, update height and rebalance.
 		updateHeight(root);
 		return rebalance(root);
 	}
@@ -221,7 +225,12 @@ public class AVLTree<T extends Comparable<T>> {
 	// EFFECT: Set the root's height field to the updated value
 	//
 	private void updateHeight(TreeNode<T> root) {
-		if (root == null) return;
+		//	if there's nothing there, just return
+		if (root == null) {
+			return;
+		}
+		//	for the height of the subtrees, if the root.left or root.right equals to null
+		//	then the height of subtrees is -1, otherwise, is the maximum value between right and left
 		int rightHeight = root.right != null ? root.right.height : -1;
 		int leftHeight = root.left != null ? root.left.height : -1;
 		root.height = rightHeight > leftHeight ? rightHeight + 1 : leftHeight + 1;
@@ -234,13 +243,16 @@ public class AVLTree<T extends Comparable<T>> {
 	private int getBalance(TreeNode<T> root) {
 		if (root.left == null) {
 			if (root.right == null) {
+				//	if the root has no child, return 0
 				return 0;
-			} else {
+			} else { //	if the root doesn't have left child but has a right one, return the height of right + 1
 				return root.right.height + 1;
 			}
+		//	if left is not null, but right == null, since null has height of -1, so -1 - left
 		} else if (root.right == null) {
 			return -1-root.left.height;
 		} else {
+			//	else return the difference of right and left
 			return root.right.height - root.left.height;
 		}
 	}
@@ -256,17 +268,22 @@ public class AVLTree<T extends Comparable<T>> {
 	// RETURNS: the root of the subtree after rebalancing
 	//
 	private TreeNode<T> rebalance(TreeNode<T> root) {
+		//	 if a root is left heavy
 		if (getBalance(root) < -1) {
-			if (getBalance(root.left) <= 0) {
+			// 	if the left side of the root is left heavy (balanced but left heavy) 
+			if (getBalance(root.left) < 0) {
+				//	rotate right
 				return rightRotate(root);
-			} else if (getBalance(root.left) >= 0){
+				//	otherwise, perform left rotation on root.left, then perform a right rotation on root
+			} else {
 				root.setLeft(leftRotate(root.left));
 				return rightRotate(root);
 			}
+		//	same strategy here
 		} else if (getBalance(root) > 1) {
-			if(getBalance(root.right) >= 0) {
+			if(getBalance(root.right) > 0) {
 				return leftRotate(root);
-			} else if (getBalance(root.right) <= 0){
+			} else {
 				root.setRight(rightRotate(root.right));
 				return leftRotate(root);
 			}
@@ -281,23 +298,35 @@ public class AVLTree<T extends Comparable<T>> {
 	//
 	// RETURNS: the new root after rotation.
 	//
+	
+	/**
+	 * Here, I comment out the defensive code, 
+	 * I'm still using the JUnit test to see if I need to add it back, since sometimes
+	 * The console would report an error.
+	 * 
+	 * But I don't think I need these code, since in the methods of insertHelper and removeHelper
+	 * it will handle the parent stuffs, i.e. set the new root to the left of right side of the original
+	 * parent. 
+	 * I think I don't really need to do anything like that at here.
+	 * @param root
+	 * @return
+	 */
 	private TreeNode<T> rightRotate(TreeNode<T> root) {
-		if (root.left == null) return root;
 		TreeNode<T> left = root.left;
 		TreeNode<T> shift = left.right;
-		if (root.parent == null) {
-			this.root = left;
-			left.parent = null;
-		} else if (root.parent.right == root) {
-			root.parent.setRight(left);
-		} else {
-			root.parent.setLeft(left);
-		}
+//		if (root.parent == null) {
+//			this.root = left;
+//			left.parent = null;
+//		} else if (root.parent.right == root) {
+//			root.parent.setRight(left);
+//		} else {
+//			root.parent.setLeft(left);
+//		}
 		left.setRight(root);
 		root.setLeft(shift);
 		updateHeight(root);
 		updateHeight(left);
-		updateHeight(left.parent);
+//		updateHeight(left.parent);
 		return left;
 	}
 
@@ -309,22 +338,21 @@ public class AVLTree<T extends Comparable<T>> {
 	// RETURNS: the new root after rotation.
 	//
 	private TreeNode<T> leftRotate(TreeNode<T> root) {
-		if (root.right == null) return root;
 		TreeNode<T> right = root.right;
 		TreeNode<T> shift = right.left;
-		if (root.parent == null) {
-			this.root = right;
-			right.parent = null;
-		} else if(root.parent.left == root) {
-			root.parent.setLeft(right);
-		} else {
-			root.parent.setRight(right);
-		}
+//		if (root.parent == null) {
+//			this.root = right;
+//			right.parent = null;
+//		} else if(root.parent.left == root) {
+//			root.parent.setLeft(right);
+//		} else {
+//			root.parent.setRight(right);
+//		}
 		right.setLeft(root);
 		root.setRight(shift);
 		updateHeight(root);
 		updateHeight(right);
-		updateHeight(right.parent);
+//		updateHeight(right.parent);
 		return right;
 	}
 
