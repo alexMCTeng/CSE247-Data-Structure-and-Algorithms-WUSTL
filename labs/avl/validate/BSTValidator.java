@@ -54,44 +54,58 @@ public class BSTValidator<T extends Comparable<T>> {
         if (child == null) {
             return;
         } else {
-	    
-            CheckTree(child.left, child);
+	        CheckTree(child.left, child);
             CheckTree(child.right, child);
 	    
-	    if (parent != null)
-		{
-		    if (child == parent.left && child.value.compareTo(parent.value) >= 0) {
-			throw new BSTValidationError(String.format("The left child {%s} is >= its parent {%s} ", 
-								   child.value, parent.value));
-		    }
+            if (parent != null)
+            {
+            	if (child == parent.left && child.value.compareTo(parent.value) >= 0) {
+            		throw new BSTValidationError(String.format("The left child {%s} is >= its parent {%s} ", 
+            				child.value, parent.value));
+            	}
+            	
 		    if (child == parent.right && child.value.compareTo(parent.value) <= 0) {
-			throw new BSTValidationError(String.format("The right child {%s} is <= its parent {%s} ", 
-								   child.value, parent.value));
-		    }
+		    	throw new BSTValidationError(String.format("The right child {%s} is <= its parent {%s} ", 
+		    			child.value, parent.value));
+		    	}
+		    
 		    if (child != parent.left && child != parent.right) {
-			throw new BSTValidationError(String.format("Parent {%s} and child {%s} are not properly linked.", 
-								   parent.value, child.value));
+		    	throw new BSTValidationError(String.format("Parent {%s} and child {%s} are not properly linked.", 
+		    			parent.value, child.value));
+		    	}
+            }
+            
+		    if (!validateHeight(child)) {
+		    	throw new BSTValidationError(String.format("The node {%s} has height %d, which is not the expected height given its children",
+		    		child.value, child.height));
 		    }
-		}
 	    
-	    if (child.height != computeHeight(child)) {
-		throw new BSTValidationError(String.format("The node {%s} does not have the correct height: expected %s, got %s",
-							   child.value, computeHeight(child), child.height));
-	    }
-	    
-	    int balance = 
-	    			(child.left != null ? child.left.height : -1) - 
-	    			(child.right != null ? child.right.height : -1);
-	    if (balance < -1 || balance  > 1) {
-		throw new BSTValidationError(String.format("The tree is not balanced starting at node %s", child.value));
-	    }
-	}
+		    if (!validateBalance(child)) {
+		    	throw new BSTValidationError(String.format("The tree is not balanced starting at node %s", child.value));
+		    }
+        }
+    }
+        
+    private boolean validateHeight(TreeNode<T> node) {
+    	if (node.left == null && node.right == null)
+    		return true;
+    	else if (node.left == null)
+    		return (node.height == node.right.height + 1);
+    	else if (node.right == null)
+    		return (node.height == node.left.height + 1);
+    	else
+    		return (node.height == Math.max(node.left.height,
+    										node.right.height) + 1);
     }
     
-    private int computeHeight(TreeNode<T> node) {
-	int hl = (node.left  == null ? -1 : node.left.height);
-	int hr = (node.right == null ? -1 : node.right.height);
-	
-        return Math.max(hl, hr) + 1;
+    private boolean validateBalance(TreeNode<T> node) {
+    	if (node.left == null && node.right == null)
+    		return true;
+    	else if (node.left == null)
+    		return (node.right.left == null && node.right.right == null);
+    	else if (node.right == null)
+    		return (node.left.left == null && node.left.right == null);
+    	else
+    		return (Math.abs(node.right.height - node.left.height) <=1);
     }
 }
