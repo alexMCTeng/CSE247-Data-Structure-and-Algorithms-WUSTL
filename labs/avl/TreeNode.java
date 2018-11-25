@@ -19,7 +19,6 @@ public class TreeNode<T extends Comparable<T>> {
     // constructor
     public TreeNode(T value) {
         this.value = value;
-	
         this.left = null;
         this.right = null;
         this.parent = null;

@@ -301,33 +301,25 @@ public class AVLTree<T extends Comparable<T>> {
 	//
 	
 	/**
-	 * Here, I comment out the defensive code, 
-	 * I'm still using the JUnit test to see if I need to add it back, since sometimes
-	 * The console would report an error.
-	 * 
-	 * But I don't think I need these code, since in the methods of insertHelper and removeHelper
-	 * it will handle the parent stuffs, i.e. set the new root to the left of right side of the original
-	 * parent. 
-	 * I think I don't really need to do anything like that at here.
 	 * @param root
 	 * @return
 	 */
 	private TreeNode<T> rightRotate(TreeNode<T> root) {
 		TreeNode<T> left = root.left;
 		TreeNode<T> shift = left.right;
-//		if (root.parent == null) {
-//			this.root = left;
-//			left.parent = null;
-//		} else if (root.parent.right == root) {
-//			root.parent.setRight(left);
-//		} else {
-//			root.parent.setLeft(left);
-//		}
+		if (root.parent == null) {
+			this.root = left;
+			left.parent = null;
+		} else if (root.parent.right == root) {
+			root.parent.setRight(left);
+		} else {
+			root.parent.setLeft(left);
+		}
 		left.setRight(root);
 		root.setLeft(shift);
 		updateHeight(root);
 		updateHeight(left);
-//		updateHeight(left.parent);
+		updateHeight(left.parent);
 		return left;
 	}
 
@@ -339,26 +331,25 @@ public class AVLTree<T extends Comparable<T>> {
 	// RETURNS: the new root after rotation.
 	//
 	/**
-	 * Same thing here, comment out the unnecessary codes.
 	 * @param root
 	 * @return
 	 */
 	private TreeNode<T> leftRotate(TreeNode<T> root) {
 		TreeNode<T> right = root.right;
 		TreeNode<T> shift = right.left;
-//		if (root.parent == null) {
-//			this.root = right;
-//			right.parent = null;
-//		} else if(root.parent.left == root) {
-//			root.parent.setLeft(right);
-//		} else {
-//			root.parent.setRight(right);
-//		}
+		if (root.parent == null) {
+			this.root = right;
+			right.parent = null;
+		} else if(root.parent.left == root) {
+			root.parent.setLeft(right);
+		} else {
+			root.parent.setRight(right);
+		}
 		right.setLeft(root);
 		root.setRight(shift);
 		updateHeight(root);
 		updateHeight(right);
-//		updateHeight(right.parent);
+		updateHeight(right.parent);
 		return right;
 	}
 
