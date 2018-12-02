@@ -41,7 +41,6 @@ public class ShortestPaths {
     // map from vertices to their parent edges in the shortest-path tree
     private HashMap<Vertex, Edge> parentEdges;
     
-    
     //
     // constructor
     //
@@ -92,7 +91,7 @@ public class ShortestPaths {
     	//
     	Decreaser<VertexAndDist> startHandle = handles.get(startVertex);
     	VertexAndDist vd = startHandle.getValue();
-    	startHandle.decrease(new VertexAndDist(vd.vertex, 0));
+    	startHandle.decrease(new VertexAndDist(vd.vertex,0));
 	
     	//
     	// OK, now it's up to you!
@@ -100,9 +99,20 @@ public class ShortestPaths {
     	// recording the parent edges of each vertex in parentEdges.
     	// FIXME
     	//
+		while(!pq.isEmpty()){
+			VertexAndDist min = pq.extractMin();
+			int original= min.getDistance() ; 
+			for (Edge e : min.getVertex().edgesFrom()) {
+				int weight =this.weights.get(e);
+				Decreaser<VertexAndDist> bDist = handles.get(e.to);
+				if ((original+weight)<bDist.getValue().getDistance()){
+					bDist.decrease(bDist.getValue().newDistance(original+weight));
+					parentEdges.put(e.to, e);
+				}
+			}
+		}
     }
-    
-    
+   
     //
     // returnPath()
     //
@@ -116,7 +126,11 @@ public class ShortestPaths {
     	//
     	// FIXME: implement this using the parent edges computed in run()
     	//
-	
+    	Vertex crtVertex= endVertex;
+		while((handles.get(crtVertex).getValue().getDistance()) > 0){
+			path.addFirst(parentEdges.get(crtVertex));
+			crtVertex=parentEdges.get(crtVertex).from;
+		}
     	return path;
     }
     
@@ -130,12 +144,10 @@ public class ShortestPaths {
     //
     public int returnLength(Vertex endVertex) {
     	LinkedList<Edge> path = returnPath(endVertex);
-	
     	int pathLength = 0;
     	for(Edge e : path) {
     		pathLength += weights.get(e);
     	}
-	
     	return pathLength;
     }
 }

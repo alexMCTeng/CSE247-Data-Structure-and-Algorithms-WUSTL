@@ -12,20 +12,30 @@ package spath;
 import spath.graphs.Vertex;
 
 public class VertexAndDist implements Comparable<VertexAndDist> {
-	
+
 	final public Vertex vertex;
 	final public int distance;
-	
+
 	public VertexAndDist(Vertex v, int dist) {
 		this.vertex   = v;
 		this.distance = dist;
 	}
-
-       	@Override
+	public int getDistance() {
+		int copy = this.distance;
+		return copy;
+	}
+	public Vertex getVertex() {
+		return this.vertex;
+	}
+	public VertexAndDist newDistance(int newdistance) {
+		return new VertexAndDist(vertex, newdistance);
+	}
+	
+	@Override
 	public String toString() {
 		return "(" + vertex + ", " + distance + ")";
 	}
-		
+
 	//
 	// Comparison of this and any other VertexAndDist object
 	//   is based only on distance from source.  The MinHeap uses
@@ -39,5 +49,5 @@ public class VertexAndDist implements Comparable<VertexAndDist> {
 		Integer thisDist = this.distance;
 		return thisDist.compareTo(dist);
 	}
-	
+
 }
