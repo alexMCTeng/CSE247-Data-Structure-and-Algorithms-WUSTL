@@ -135,10 +135,17 @@ public class ShortestPaths {
     	//
     	// FIXME: implement this using the parent edges computed in run()
     	//
-    	Vertex crtVertex= endVertex;
-		while((handles.get(crtVertex).getValue().getDistance()) > 0){
-			path.addFirst(parentEdges.get(crtVertex));
-			crtVertex=parentEdges.get(crtVertex).from;
+    	//	duplicate the endVertex since we're going to keep updating the endpoint
+    	Vertex copy = endVertex;
+    	//	get the distance from our handlesMap, 
+    	//	Get the value, in this case Decreaser<VertexAndDist>, of given key, in this case, vertex
+    	//	if the value of the distance of the Decreaser is greater than 0
+    	// 	means we're not done, we need to keep finding the previous vertex
+		while((handles.get(copy).getValue().getDistance()) > 0){
+			//	using the key, in this case copy, to get the edge from parentEdges
+			path.addFirst(parentEdges.get(copy));
+			//	update the copy to the edge's parent(from)
+			copy = parentEdges.get(copy).from;
 		}
     	return path;
     }
