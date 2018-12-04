@@ -99,13 +99,22 @@ public class ShortestPaths {
     	// recording the parent edges of each vertex in parentEdges.
     	// FIXME
     	//
+    	//	if the heap is not empty
 		while(!pq.isEmpty()){
+			//	extract the min from the heap
 			VertexAndDist min = pq.extractMin();
-			int original= min.getDistance() ; 
+			//	get the original shortest distance
+			int original = min.getDistance() ; 
+			//	iterate all the outgoing edges
 			for (Edge e : min.getVertex().edgesFrom()) {
-				int weight =this.weights.get(e);
+				//	get the weight of the edge
+				int weight = this.weights.get(e);
+				//	use handlesMap to get the vertex that the edge is pointing to
 				Decreaser<VertexAndDist> bDist = handles.get(e.to);
-				if ((original+weight)<bDist.getValue().getDistance()){
+				//	if the vertex.value.distance is greater than the original + weight
+				//	update it by decrease method
+				//	put it to the parentEdgesMap for tracking the shortest Path
+				if ((original + weight) < bDist.getValue().getDistance()){
 					bDist.decrease(bDist.getValue().newDistance(original+weight));
 					parentEdges.put(e.to, e);
 				}
