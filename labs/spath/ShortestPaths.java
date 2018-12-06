@@ -92,21 +92,14 @@ public class ShortestPaths {
     	Decreaser<VertexAndDist> startHandle = handles.get(startVertex);
     	VertexAndDist vd = startHandle.getValue();
     	startHandle.decrease(new VertexAndDist(vd.vertex,0));
-	
-    	//
-    	// OK, now it's up to you!
-    	// Implement the main loop of Dijkstra's shortest-path algorithm,
-    	// recording the parent edges of each vertex in parentEdges.
-    	// FIXME
-    	//
     	//	if the heap is not empty
 		while(!pq.isEmpty()){
 			//	extract the min from the heap
 			VertexAndDist min = pq.extractMin();
 			//	get the original shortest distance
-			int original = min.getDistance() ; 
+			int original = min.distance; 
 			//	iterate all the outgoing edges
-			for (Edge e : min.getVertex().edgesFrom()) {
+			for (Edge e : min.vertex.edgesFrom()) {
 				//	get the weight of the edge
 				int weight = this.weights.get(e);
 				//	use handlesMap to get the vertex that the edge is pointing to
@@ -114,8 +107,8 @@ public class ShortestPaths {
 				//	if the vertex.value.distance is greater than the original + weight
 				//	update it by decrease method
 				//	put it to the parentEdgesMap for tracking the shortest Path
-				if ((original + weight) < distToNext.getValue().getDistance()){
-					distToNext.decrease(distToNext.getValue().newDistance(original+weight));
+				if ((original + weight) < distToNext.getValue().distance){
+					distToNext.decrease(new VertexAndDist(distToNext.getValue().vertex, (original+ weight)));
 					parentEdges.put(e.to, e);
 				}
 			}
@@ -130,18 +123,14 @@ public class ShortestPaths {
     // The edges should be ordered starting from the start vertex.
     //
     public LinkedList<Edge> returnPath(Vertex endVertex) {
-    	LinkedList<Edge> path = new LinkedList<Edge>();
-	
-    	//
-    	// FIXME: implement this using the parent edges computed in run()
-    	//
+    	LinkedList<Edge> path = new LinkedList<Edge>();	
     	//	duplicate the endVertex since we're going to keep updating the endpoint
     	Vertex copy = endVertex;
     	//	get the distance from our handlesMap, 
     	//	Get the value, in this case Decreaser<VertexAndDist>, of given key, in this case, vertex
     	//	if the value of the distance of the Decreaser is greater than 0
     	// 	means we're not done, we need to keep finding the previous vertex
-		while((handles.get(copy).getValue().getDistance()) > 0){
+		while((handles.get(copy).getValue().distance) > 0){
 			//	using the key, in this case copy, to get the edge from parentEdges
 			path.addFirst(parentEdges.get(copy));
 			//	update the copy to the edge's parent(from)

@@ -20,17 +20,6 @@ public class VertexAndDist implements Comparable<VertexAndDist> {
 		this.vertex   = v;
 		this.distance = dist;
 	}
-	public int getDistance() {
-		int copy = this.distance;
-		return copy;
-	}
-	public Vertex getVertex() {
-		return this.vertex;
-	}
-	public VertexAndDist newDistance(int newdistance) {
-		return new VertexAndDist(vertex, newdistance);
-	}
-	
 	@Override
 	public String toString() {
 		return "(" + vertex + ", " + distance + ")";
