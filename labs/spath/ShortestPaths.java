@@ -110,12 +110,12 @@ public class ShortestPaths {
 				//	get the weight of the edge
 				int weight = this.weights.get(e);
 				//	use handlesMap to get the vertex that the edge is pointing to
-				Decreaser<VertexAndDist> bDist = handles.get(e.to);
+				Decreaser<VertexAndDist> distToNext = handles.get(e.to);
 				//	if the vertex.value.distance is greater than the original + weight
 				//	update it by decrease method
 				//	put it to the parentEdgesMap for tracking the shortest Path
-				if ((original + weight) < bDist.getValue().getDistance()){
-					bDist.decrease(bDist.getValue().newDistance(original+weight));
+				if ((original + weight) < distToNext.getValue().getDistance()){
+					distToNext.decrease(distToNext.getValue().newDistance(original+weight));
 					parentEdges.put(e.to, e);
 				}
 			}
