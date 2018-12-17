@@ -1,53 +1,18 @@
 -------------------
-CSE247 Robot tester starts testing hash on 2018-11-29 20:45:53 -0600
+CSE247 Robot tester starts testing hash on 2018-12-17 13:21:21 -0500
 
 ========
 Testing in ./GradingRepos/repos/cse247-f18-students-teng.ming-che: hash as of 2018-11-03 00:05
 ========
 Now in: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-teng.ming-che
 Your branch is up to date with 'origin/master'.
-HEAD is now at 61082f6 Merge remote-tracking branch 'upstream/master'
+HEAD is now at 2396391 robograde
 No local changes to save
 
-Updating 61082f6..d33ebff
+Updating 2396391..2214ba5
 Fast-forward
- RoboGrade/hash-test.TestStringTable.txt        |  1041 +++
- labs/avl/AVLTree.java                          |   318 +-
- labs/avl/TreeNode.java                         |     1 -
- labs/avl/validate/BSTValidator.java            |    78 +-
- labs/spath/ShortestPaths.java                  |   141 +
- labs/spath/VertexAndDist.java                  |    43 +
- labs/spath/graphs/DirectedGraph.java           |    54 +
- labs/spath/graphs/Edge.java                    |    22 +
- labs/spath/graphs/Vertex.java                  |    60 +
- labs/spath/testing/GraphGenerator.java         |   290 +
- labs/spath/testing/GraphViz.java               |   277 +
- labs/spath/testing/TestShortestPath.java       |    76 +
- labs/spath/testing/TestShortestPathSilent.java |    59 +
- outputs/heapsort-ticks3.csv                    |    46 +
- outputs/heapsort-time3.csv                     |    46 +
- outputs/studio8paintingcolors.csv              | 10884 +++++++++++------------
- outputs/studio8randomcolors.csv                | 10000 ++++++++++-----------
- studios/studio8/HashColors.java                |     3 +-
- studios/studio8/Point.java                     |     2 +-
- studiowriteups/studio10.txt                    |     2 +-
- studiowriteups/studio11.txt                    |    53 +
- studiowriteups/studio13.txt                    |    52 +
- 22 files changed, 12952 insertions(+), 10596 deletions(-)
- create mode 100644 RoboGrade/hash-test.TestStringTable.txt
- create mode 100644 labs/spath/ShortestPaths.java
- create mode 100644 labs/spath/VertexAndDist.java
- create mode 100644 labs/spath/graphs/DirectedGraph.java
- create mode 100644 labs/spath/graphs/Edge.java
- create mode 100644 labs/spath/graphs/Vertex.java
- create mode 100644 labs/spath/testing/GraphGenerator.java
- create mode 100644 labs/spath/testing/GraphViz.java
- create mode 100644 labs/spath/testing/TestShortestPath.java
- create mode 100644 labs/spath/testing/TestShortestPathSilent.java
- create mode 100644 outputs/heapsort-ticks3.csv
- create mode 100644 outputs/heapsort-time3.csv
- create mode 100644 studiowriteups/studio11.txt
- create mode 100644 studiowriteups/studio13.txt
+ RoboGrade/spath-testing.TestShortestPathSilent.txt | 19 +++++++++----------
+ 1 file changed, 9 insertions(+), 10 deletions(-)
 Going back in time to: 2018-11-03 00:05
 At hash 71eef2e0bf763fae59a9cd8601dcc4569a56ff74
 
@@ -105,7 +70,7 @@ test:
     [junit] Testing DNA test case 4
     [junit] Observed output for case4 matches expected output!
     [junit] 
-    [junit] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.171 sec
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 sec
     [junit] Output:
     [junit] Testing DNA test case 1
     [junit] Observed output for case1 matches expected output!
@@ -120,7 +85,7 @@ test:
     [junit] Observed output for case4 matches expected output!
     [junit] 
     [junit] 
-    [junit] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.171 sec
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 sec
     [junit] ------------- Standard Output ---------------
     [junit] Testing DNA test case 1
     [junit] Observed output for case1 matches expected output!
@@ -136,20 +101,20 @@ test:
     [junit] 
     [junit] ------------- ---------------- ---------------
     [junit] 
-    [junit] Testcase: testDNA1 took 0.108 sec
-    [junit] Testcase: testDNA2 took 0.016 sec
-    [junit] Testcase: testDNA3 took 0.324 sec
-    [junit] Testcase: testDNA4 took 0.657 sec
+    [junit] Testcase: testDNA1 took 0.051 sec
+    [junit] Testcase: testDNA2 took 0.012 sec
+    [junit] Testcase: testDNA3 took 0.279 sec
+    [junit] Testcase: testDNA4 took 0.597 sec
     [junit] Testcase: testFind took 0.022 sec
-    [junit] Testcase: testInit took 0.001 sec
+    [junit] Testcase: testInit took 0 sec
     [junit] Testcase: testDelete took 0.002 sec
     [junit] Testcase: testInsert took 0.002 sec
 
 BUILD SUCCESSFUL
-Total time: 2 seconds
+Total time: 1 second
 ================
 Lab is counted as working
 ================
 
-CSE247 Robot tester ends testing hash on 2018-11-29 20:46:08 -0600
+CSE247 Robot tester ends testing hash on 2018-12-17 13:21:31 -0500
 -------------------
