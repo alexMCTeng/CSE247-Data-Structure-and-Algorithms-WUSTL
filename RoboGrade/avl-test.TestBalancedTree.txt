@@ -1,20 +1,19 @@
 -------------------
-CSE247 Robot tester starts testing avl on 2018-12-10 13:35:54 -0600
+CSE247 Robot tester starts testing avl on 2018-12-16 23:50:12 -0500
 
 ========
-Testing in ./GradingRepos/repos/cse247-f18-students-teng.ming-che: avl as of 2018-11-28 00:10
+Testing in ./GradingRepos/repos/cse247-f18-students-teng.ming-che: avl as of 2018-11-28 01:00
 ========
 Now in: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-teng.ming-che
 Your branch is up to date with 'origin/master'.
-HEAD is now at 1f2682c delete superfluous methods.
+HEAD is now at 12db440 robograde
 No local changes to save
 
-Updating 1f2682c..f1b4a2f
+Updating 12db440..04fdc17
 Fast-forward
- RoboGrade/avl-test.TestBalancedTree.txt | 4594 +++++++++++++++++++++++++++++++
- 1 file changed, 4594 insertions(+)
- create mode 100644 RoboGrade/avl-test.TestBalancedTree.txt
-Going back in time to: 2018-11-28 00:10
+ RoboGrade/spath-testing.TestShortestPathSilent.txt | 21 +++++++++++----------
+ 1 file changed, 11 insertions(+), 10 deletions(-)
+Going back in time to: 2018-11-28 01:00
 At hash 8f9ae5440a8edeba206f3f336f7bfa5bf1d49a16
 
 Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
@@ -50,22 +49,31 @@ test:
     [junit] Running avl.test.TestBalancedTree
     [junit] Testsuite: avl.test.TestBalancedTree
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
+    [junit] The node {2} has height 0, which is not the expected height given its children
+    [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:58)
+    [junit] Tree Validation Error (detail shown below):
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] Tree before the problem occurred:
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit]  (not printing large tree, n=200000)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] What went wrong: null
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] Tree that triggered this problem:
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit]  (not printing large tree, n=200000)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] 
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] ===== End Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] 
+    [junit] 
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertLargeRandom(TestBalancedTree.java:118)
@@ -92,45 +100,32 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
-    [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
-    [junit] Failure message: Tree Validation Error (detail shown below):
-    [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
-    [junit] Tree before the problem occurred:
-    [junit]  (not printing large tree, n=200000)
-    [junit] What went wrong: null
-    [junit] Tree that triggered this problem:
-    [junit]  (not printing large tree, n=200000)
-    [junit] 
-    [junit] ===== End Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
-    [junit] 
-    [junit] 
     [junit] ===== Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] Tree Validation Error (detail shown below):
     [junit] The node {14} has height 0, which is not the expected height given its children
-    [junit] The node {14} has height 0, which is not the expected height given its children
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] Tree before the problem occurred:
-    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] Root-14
-    [junit] 	at avl.test.TestBalancedTree.testInsertSmallDescending(TestBalancedTree.java:73)
     [junit] 
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     [junit] What went wrong: null
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] Tree that triggered this problem:
-    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] Root-14
-    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
     [junit] |  L-13
     [junit] 
-    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
     [junit] ===== End Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
     [junit] 
-    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {14} has height 0, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestBalancedTree.testInsertSmallDescending(TestBalancedTree.java:73)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
     [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
@@ -186,14 +181,14 @@ test:
     [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-3
+    [junit] Root-2
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-3
-    [junit] |  R-7
+    [junit] Root-2
+    [junit] |  R-13
     [junit] 
     [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] 
@@ -255,7 +250,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -287,6 +282,62 @@ test:
     [junit] ===== End Failure report for testInsertLargeAscending(avl.test.TestBalancedTree) ========
     [junit] 
     [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height 0, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestBalancedTree.testInsertSmallAscending(TestBalancedTree.java:46)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {10} has height 0, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] ===== Failure report for testInsertLargeDescending(avl.test.TestBalancedTree) ========
     [junit] Failure message: java.lang.StackOverflowError
     [junit] ===== End Failure report for testInsertLargeDescending(avl.test.TestBalancedTree) ========
@@ -317,17 +368,17 @@ test:
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
     [junit] Root-10
-    [junit] |  L-7
+    [junit] |  L-4
     [junit] 
     [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] 
     [junit] 
-    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.512 sec
+    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.066 sec
     [junit] Output:
     [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
     [junit]  (not printing large tree, n=200000)
     [junit] What went wrong: null
@@ -390,14 +441,14 @@ test:
     [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-3
+    [junit] Root-2
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-3
-    [junit] |  R-7
+    [junit] Root-2
+    [junit] |  R-13
     [junit] 
     [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] 
@@ -437,7 +488,7 @@ test:
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
     [junit] Root-10
-    [junit] |  L-7
+    [junit] |  L-4
     [junit] 
     [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] 
@@ -445,123 +496,63 @@ test:
     [junit] 
     [junit] Error: 
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:58)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] Tree Validation Error (detail shown below):
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] The node {0} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.test.TestBalancedTree.testInsertSmallAscending(TestBalancedTree.java:46)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
-    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] 	at avl.test.TestBalancedTree.testInsertLargeRandom(TestBalancedTree.java:118)
-    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
     [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
     [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
     [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
     [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
     [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-    [junit] Tree Validation Error (detail shown below):
     [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-    [junit] The node {10} has height 0, which is not the expected height given its children
     [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-    [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
     [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
     [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
-    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
-    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
     [junit] Tree Validation Error (detail shown below):
-    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
     [junit] The node {14} has height 0, which is not the expected height given its children
-    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
-    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
-    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallDescending(TestBalancedTree.java:73)
-    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
     [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
     [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
     [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
     [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
     [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
     [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
     [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
@@ -628,7 +619,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -712,12 +703,12 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] 
-    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.512 sec
+    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.066 sec
     [junit] ------------- Standard Output ---------------
     [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
     [junit]  (not printing large tree, n=200000)
     [junit] What went wrong: null
@@ -780,14 +771,14 @@ test:
     [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-3
+    [junit] Root-2
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-3
-    [junit] |  R-7
+    [junit] Root-2
+    [junit] |  R-13
     [junit] 
     [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] 
@@ -827,7 +818,7 @@ test:
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
     [junit] Root-10
-    [junit] |  L-7
+    [junit] |  L-4
     [junit] 
     [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] 
@@ -835,13 +826,9 @@ test:
     [junit] ------------- ---------------- ---------------
     [junit] ------------- Standard Error -----------------
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:58)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
@@ -962,7 +949,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -1047,12 +1034,12 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] ------------- ---------------- ---------------
     [junit] 
-    [junit] Testcase: testInsertLargeRandom took 0.3 sec
+    [junit] Testcase: testInsertLargeRandom took 0.223 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
     [junit]  (not printing large tree, n=200000)
     [junit] What went wrong: null
@@ -1065,7 +1052,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testInsertSmallDescending took 0.044 sec
+    [junit] Testcase: testInsertSmallDescending took 0.043 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
@@ -1085,7 +1072,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testRemoveLarge took 3.066 sec
+    [junit] Testcase: testRemoveLarge took 2.904 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] java.lang.StackOverflowError
@@ -2134,7 +2121,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testRemoveSmall took 0.001 sec
+    [junit] Testcase: testRemoveSmall took 0.002 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
@@ -2155,19 +2142,19 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
     [junit] Testcase: testEmptyTree took 0 sec
-    [junit] Testcase: testInsertSmallRandom took 0.002 sec
+    [junit] Testcase: testInsertSmallRandom took 0.001 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-3
+    [junit] Root-2
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-3
-    [junit] |  R-7
+    [junit] Root-2
+    [junit] |  R-13
     [junit] 
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:44)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -2175,7 +2162,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testInsertLargeAscending took 2.952 sec
+    [junit] Testcase: testInsertLargeAscending took 2.938 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] java.lang.StackOverflowError
@@ -3204,7 +3191,7 @@ test:
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 
-    [junit] Testcase: testInsertLargeDescending took 3.092 sec
+    [junit] Testcase: testInsertLargeDescending took 2.897 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] java.lang.StackOverflowError
@@ -4265,7 +4252,7 @@ test:
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
     [junit] Root-10
-    [junit] |  L-7
+    [junit] |  L-4
     [junit] 
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:44)
     [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
@@ -4277,17 +4264,17 @@ test:
 BUILD FAILED
 /Users/puneetsachdeva/CSE247/cse247-support/build.xml:34: Test avl.test.TestBalancedTree failed
 
-Total time: 10 seconds
+Total time: 9 seconds
 ========
-Testing in ./GradingRepos/repos/cse247-f18-students-teng.ming-che: avl as of 2018-12-05 00:05
+Testing in ./GradingRepos/repos/cse247-f18-students-teng.ming-che: avl as of 2018-12-05 01:00
 ========
 Now in: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-teng.ming-che
 Your branch is up to date with 'origin/master'.
-HEAD is now at f1b4a2f robograde
+HEAD is now at 04fdc17 robograde
 No local changes to save
 
 Already up to date.
-Going back in time to: 2018-12-05 00:05
+Going back in time to: 2018-12-05 01:00
 At hash 4ad8c263f8767612672fd4e6abc9d6ada762f11e
 
 Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
@@ -4323,11 +4310,9 @@ test:
     [junit] Running avl.test.TestBalancedTree
     [junit] Testsuite: avl.test.TestBalancedTree
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:58)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
@@ -4347,61 +4332,46 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
     [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
-    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] Failure message: Tree Validation Error (detail shown below):
-    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] Tree Validation Error (detail shown below):
-    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-    [junit] The node {3} has height 0, which is not the expected height given its children
-    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
     [junit]  (not printing large tree, n=200000)
-    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
     [junit] What went wrong: null
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
     [junit] Tree that triggered this problem:
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
     [junit]  (not printing large tree, n=200000)
-    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] 
-    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
     [junit] ===== End Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
-    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 
-    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] 
-    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-    [junit] ===== Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
-    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-    [junit] Failure message: Tree Validation Error (detail shown below):
-    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
     [junit] Tree Validation Error (detail shown below):
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] The node {14} has height 0, which is not the expected height given its children
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
-    [junit] Tree before the problem occurred:
-    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
-    [junit] Root-14
-    [junit] Tree Validation Error (detail shown below):
-    [junit] 
-    [junit] The node {14} has height 0, which is not the expected height given its children
-    [junit] What went wrong: null
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
-    [junit] Tree that triggered this problem:
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
-    [junit] Root-14
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallDescending(TestBalancedTree.java:73)
-    [junit] |  L-13
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    [junit] 
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    [junit] ===== End Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    [junit] 
     [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-    [junit] 
     [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
     [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -4421,43 +4391,58 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
-    [junit] ===== Failure report for testRemoveLarge(avl.test.TestBalancedTree) ========
-    [junit] Failure message: java.lang.StackOverflowError
-    [junit] Tree Validation Error (detail shown below):
-    [junit] ===== End Failure report for testRemoveLarge(avl.test.TestBalancedTree) ========
-    [junit] The node {15} has height 0, which is not the expected height given its children
-    [junit] 
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
-    [junit] 
-    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
-    [junit] ===== Failure report for testRebalanceSmall(avl.test.TestBalancedTree) ========
-    [junit] 	at avl.test.TestBalancedTree.testRebalanceSmall(TestBalancedTree.java:212)
+    [junit] ===== Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     [junit] Tree Validation Error (detail shown below):
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    [junit] The node {15} has height 0, which is not the expected height given its children
-    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-    [junit] Root-15
-    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Root-14
     [junit] 
-    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] What went wrong: null
-    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] Tree that triggered this problem:
-    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Root-14
+    [junit] |  L-13
+    [junit] 
+    [junit] ===== End Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
+    [junit] 
+    [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] ===== Failure report for testRemoveLarge(avl.test.TestBalancedTree) ========
+    [junit] The node {15} has height 0, which is not the expected height given its children
+    [junit] Failure message: java.lang.StackOverflowError
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
+    [junit] ===== End Failure report for testRemoveLarge(avl.test.TestBalancedTree) ========
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 
+    [junit] 	at avl.test.TestBalancedTree.testRebalanceSmall(TestBalancedTree.java:212)
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] ===== Failure report for testRebalanceSmall(avl.test.TestBalancedTree) ========
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] The node {15} has height 0, which is not the expected height given its children
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] Root-15
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] What went wrong: null
     [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-    [junit] |  L-10
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
     [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-    [junit] 
+    [junit] |  L-10
     [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-    [junit] ===== End Failure report for testRebalanceSmall(avl.test.TestBalancedTree) ========
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
     [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] ===== End Failure report for testRebalanceSmall(avl.test.TestBalancedTree) ========
     [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
     [junit] 
     [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] ===== Failure report for testRemoveSmall(avl.test.TestBalancedTree) ========
@@ -4496,11 +4481,11 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] Tree Validation Error (detail shown below):
     [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-    [junit] The node {4} has height 0, which is not the expected height given its children
+    [junit] The node {3} has height 0, which is not the expected height given its children
     [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
     [junit] Tree before the problem occurred:
     [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-    [junit] Root-4
+    [junit] Root-3
     [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] 
     [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
@@ -4508,17 +4493,17 @@ test:
     [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
     [junit] Tree that triggered this problem:
     [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-    [junit] Root-4
+    [junit] Root-3
     [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-    [junit] |  R-12
-    [junit] 
+    [junit] |  L-2
     [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-    [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
     [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] 
     [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 
     [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
@@ -4528,7 +4513,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {4} has height 0, which is not the expected height given its children
+    [junit] The node {3} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -4583,24 +4568,24 @@ test:
     [junit] ===== Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {1} has height 0, which is not the expected height given its children
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-1
+    [junit] Root-14
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-1
-    [junit] |  R-7
+    [junit] Root-14
+    [junit] |  L-5
     [junit] 
     [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] 
     [junit] 
-    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.583 sec
+    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.108 sec
     [junit] Output:
     [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
     [junit]  (not printing large tree, n=200000)
     [junit] What went wrong: null
@@ -4611,74 +4596,130 @@ test:
     [junit] 
     [junit] 
     [junit] ===== Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
-    [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] The node {0} has height 0, which is not the expected height given its children
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] The node {14} has height 0, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] Tree before the problem occurred:
+    [junit] 	at avl.test.TestBalancedTree.testInsertSmallAscending(TestBalancedTree.java:46)
     [junit] Root-14
     [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] Root-14
     [junit] |  L-13
     [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] ===== End Failure report for testInsertSmallDescending(avl.test.TestBalancedTree) ========
     [junit] 
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
     [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
     [junit] ===== Failure report for testRemoveLarge(avl.test.TestBalancedTree) ========
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] Failure message: java.lang.StackOverflowError
     [junit] ===== End Failure report for testRemoveLarge(avl.test.TestBalancedTree) ========
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] 
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
     [junit] 
     [junit] ===== Failure report for testRebalanceSmall(avl.test.TestBalancedTree) ========
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
     [junit] The node {15} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
     [junit] Root-15
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
     [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
     [junit] What went wrong: null
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
     [junit] Root-15
     [junit] |  L-10
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] ===== End Failure report for testRebalanceSmall(avl.test.TestBalancedTree) ========
     [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
     [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
     [junit] ===== Failure report for testRemoveSmall(avl.test.TestBalancedTree) ========
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
     [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] The node {0} has height 0, which is not the expected height given its children
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree before the problem occurred:
-    [junit] Root-0
-    [junit] 
-    [junit] What went wrong: null
-    [junit] Tree that triggered this problem:
-    [junit] Root-0
-    [junit] |  R-1
-    [junit] 
-    [junit] ===== End Failure report for testRemoveSmall(avl.test.TestBalancedTree) ========
-    [junit] 
-    [junit] 
-    [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
-    [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {4} has height 0, which is not the expected height given its children
-    [junit] Tree before the problem occurred:
-    [junit] Root-4
+    [junit] Root-0
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] 
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] What went wrong: null
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] Tree that triggered this problem:
-    [junit] Root-4
-    [junit] |  R-12
+    [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
+    [junit] Root-0
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] |  R-1
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] ===== End Failure report for testRemoveSmall(avl.test.TestBalancedTree) ========
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] Root-3
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] What went wrong: null
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] Root-3
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] |  L-2
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
     [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
     [junit] 
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
     [junit] ===== Failure report for testInsertLargeAscending(avl.test.TestBalancedTree) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
     [junit] Failure message: java.lang.StackOverflowError
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] ===== End Failure report for testInsertLargeAscending(avl.test.TestBalancedTree) ========
     [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] 
     [junit] ===== Failure report for testInsertLargeDescending(avl.test.TestBalancedTree) ========
     [junit] Failure message: java.lang.StackOverflowError
@@ -4703,14 +4744,14 @@ test:
     [junit] ===== Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {1} has height 0, which is not the expected height given its children
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-1
+    [junit] Root-14
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-1
-    [junit] |  R-7
+    [junit] Root-14
+    [junit] |  L-5
     [junit] 
     [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] 
@@ -4718,11 +4759,9 @@ test:
     [junit] 
     [junit] Error: 
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:58)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
@@ -4845,7 +4884,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {4} has height 0, which is not the expected height given its children
+    [junit] The node {3} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -4901,7 +4940,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {1} has height 0, which is not the expected height given its children
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
@@ -4929,12 +4968,12 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] 
-    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.583 sec
+    [junit] Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 9.108 sec
     [junit] ------------- Standard Output ---------------
     [junit] ===== Failure report for testInsertLargeRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
     [junit]  (not printing large tree, n=200000)
     [junit] What went wrong: null
@@ -4997,14 +5036,14 @@ test:
     [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {4} has height 0, which is not the expected height given its children
+    [junit] The node {3} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-4
+    [junit] Root-3
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-4
-    [junit] |  R-12
+    [junit] Root-3
+    [junit] |  L-2
     [junit] 
     [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestBalancedTree) ========
     [junit] 
@@ -5037,14 +5076,14 @@ test:
     [junit] ===== Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] Failure message: Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {1} has height 0, which is not the expected height given its children
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-1
+    [junit] Root-14
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-1
-    [junit] |  R-7
+    [junit] Root-14
+    [junit] |  L-5
     [junit] 
     [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestBalancedTree) ========
     [junit] 
@@ -5052,11 +5091,9 @@ test:
     [junit] ------------- ---------------- ---------------
     [junit] ------------- Standard Error -----------------
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:58)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:57)
@@ -5179,7 +5216,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {4} has height 0, which is not the expected height given its children
+    [junit] The node {3} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -5235,7 +5272,7 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {1} has height 0, which is not the expected height given its children
+    [junit] The node {14} has height 0, which is not the expected height given its children
     [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
@@ -5264,12 +5301,12 @@ test:
     [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
     [junit] ------------- ---------------- ---------------
     [junit] 
-    [junit] Testcase: testInsertLargeRandom took 0.236 sec
+    [junit] Testcase: testInsertLargeRandom took 0.217 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {3} has height 0, which is not the expected height given its children
+    [junit] The node {2} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
     [junit]  (not printing large tree, n=200000)
     [junit] What went wrong: null
@@ -5282,7 +5319,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testInsertSmallDescending took 0.042 sec
+    [junit] Testcase: testInsertSmallDescending took 0.043 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
@@ -5302,7 +5339,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testRemoveLarge took 3.108 sec
+    [junit] Testcase: testRemoveLarge took 2.961 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] java.lang.StackOverflowError
@@ -6331,7 +6368,7 @@ test:
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 
-    [junit] Testcase: testRebalanceSmall took 0.002 sec
+    [junit] Testcase: testRebalanceSmall took 0.001 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
@@ -6351,7 +6388,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testRemoveSmall took 0.001 sec
+    [junit] Testcase: testRemoveSmall took 0.002 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
@@ -6372,19 +6409,19 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
     [junit] Testcase: testEmptyTree took 0 sec
-    [junit] Testcase: testInsertSmallRandom took 0.002 sec
+    [junit] Testcase: testInsertSmallRandom took 0.001 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] Tree Validation Error (detail shown below):
     [junit] Tree Validation Error (detail shown below):
-    [junit] The node {4} has height 0, which is not the expected height given its children
+    [junit] The node {3} has height 0, which is not the expected height given its children
     [junit] Tree before the problem occurred:
-    [junit] Root-4
+    [junit] Root-3
     [junit] 
     [junit] What went wrong: null
     [junit] Tree that triggered this problem:
-    [junit] Root-4
-    [junit] |  R-12
+    [junit] Root-3
+    [junit] |  L-2
     [junit] 
     [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:44)
     [junit] 	at avl.test.TestBalancedTree.testInsertSmallRandom(TestBalancedTree.java:102)
@@ -6392,7 +6429,7 @@ test:
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Testcase: testInsertLargeAscending took 3.084 sec
+    [junit] Testcase: testInsertLargeAscending took 2.958 sec
     [junit] 	Caused an ERROR
     [junit] null
     [junit] java.lang.StackOverflowError
@@ -6945,73 +6982,1559 @@ test:
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] Tree Validation Error (detail shown below):
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] The node {0} has height 0, which is not the expected height given its children
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:79)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at avl.test.TestBalancedTree.testInsertSmallAscending(TestBalancedTree.java:46)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
     [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
-    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-    [junit] Testsuite: avl.test.TestBalancedTree
-    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:145)
     [junit] 
-    [junit] Testcase: testInsertDuplicates took 0.002 sec
+    [junit] Testcase: testInsertLargeDescending took 2.869 sec
     [junit] 	Caused an ERROR
-    [junit] Timeout occurred. Please note the time in the report does not reflect the time until the timeout.
-    [junit] junit.framework.AssertionFailedError: Timeout occurred. Please note the time in the report does not reflect the time until the timeout.
+    [junit] null
+    [junit] java.lang.StackOverflowError
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 	at avl.AVLTree.insertHelper(AVLTree.java:142)
+    [junit] 
+    [junit] Testcase: testInsertSmallAscending took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height 0, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] What went wrong: null
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:44)
+    [junit] 	at avl.test.TestBalancedTree.testInsertSmallAscending(TestBalancedTree.java:46)
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
     [junit] 
-    [junit] Running avl.test.TestBalancedTree
-    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Testcase: testInsertDuplicates took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {14} has height 0, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-14
+    [junit] 
+    [junit] What went wrong: null
+    [junit] Tree that triggered this problem:
+    [junit] Root-14
+    [junit] |  L-5
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:44)
+    [junit] 	at avl.test.TestBalancedTree.testInsertDuplicates(TestBalancedTree.java:133)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
 
 BUILD FAILED
-/Users/puneetsachdeva/CSE247/cse247-support/build.xml:34: Test avl.test.TestBalancedTree failed (timeout)
+/Users/puneetsachdeva/CSE247/cse247-support/build.xml:34: Test avl.test.TestBalancedTree failed
 
-Total time: 10 seconds
+Total time: 9 seconds
 ================
 Lab is not counted -- failed unit tests
 ================
 
-CSE247 Robot tester ends testing avl on 2018-12-10 13:36:27 -0600
+CSE247 Robot tester ends testing avl on 2018-12-16 23:50:42 -0500
 -------------------
