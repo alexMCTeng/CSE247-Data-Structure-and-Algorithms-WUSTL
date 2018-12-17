@@ -1,19 +1,18 @@
 -------------------
-CSE247 Robot tester starts testing spath on 2018-12-15 13:36:29 -0600
+CSE247 Robot tester starts testing spath on 2018-12-17 02:11:52 -0500
 
 ========
 Testing in ./GradingRepos/repos/cse247-f18-students-teng.ming-che: spath as of 2018-12-08 06:00
 ========
 Now in: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-teng.ming-che
 Your branch is up to date with 'origin/master'.
-HEAD is now at f7ab458 robograde
+HEAD is now at 04fdc17 robograde
 No local changes to save
 
-Updating f7ab458..12db440
+Updating 04fdc17..2396391
 Fast-forward
- RoboGrade/spath-testing.TestShortestPathSilent.txt | 59 ++++++++++++++++++++++
- 1 file changed, 59 insertions(+)
- create mode 100644 RoboGrade/spath-testing.TestShortestPathSilent.txt
+ RoboGrade/avl-test.TestBalancedTree.txt | 2087 ++++++++++++++++++++++++++-----
+ 1 file changed, 1805 insertions(+), 282 deletions(-)
 Going back in time to: 2018-12-08 06:00
 At hash 1f2682cff1f04af0c0ce5cb780af01c7b871ab7e
 
@@ -45,10 +44,10 @@ Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
 test:
     [junit] Running spath.testing.TestShortestPathSilent
     [junit] Testsuite: spath.testing.TestShortestPathSilent
-    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.018 sec
-    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.018 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.032 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.032 sec
     [junit] 
-    [junit] Testcase: test took 4 sec
+    [junit] Testcase: test took 4.014 sec
 
 BUILD SUCCESSFUL
 Total time: 4 seconds
@@ -56,5 +55,5 @@ Total time: 4 seconds
 Lab is counted as working
 ================
 
-CSE247 Robot tester ends testing spath on 2018-12-15 13:36:41 -0600
+CSE247 Robot tester ends testing spath on 2018-12-17 02:12:01 -0500
 -------------------
